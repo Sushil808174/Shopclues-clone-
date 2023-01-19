@@ -5,15 +5,22 @@ margin: auto;
 padding: auto;
 
 }
+.body{
+    width: 100%;
+}
 /* contact start */
 #head_contancts{
    display: flex;
    flex-direction: row-reverse;
    margin: auto;
    height: 1em;
-   padding-right: 1.9rem;
+   /* padding-right: 1.9rem; */
+   /* background-color: red; */
+   width: 90%;
+   margin: auto;
 }
-ul{
+ ul{
+    /* background-color: red; */
     display: inline-flex;
     gap: 10px;
     margin-inline-start: 0px;
@@ -34,42 +41,70 @@ ul{
 #logo:hover{
   cursor: pointer;
 }
-#seachBox{
-    width: 40em;
+#seach{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* border: solid black; */
+    height: 7vh;
     box-sizing: border-box;
-    border: 2px solid #e5f4f6;
-    border-radius: 4px;
-    font-size: 16px;
+    overflow: hidden;
+    /* flex-direction: row; */
+}
+#seach form{
+    width: 80%;
+    height: 100%;
+}
+#seachBox{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(178, 228, 236);
+    border-radius: 4px 0 0 4px;
+    font-size: 1em;
     background-color: #e5f4f6;
     background-image: url('https://img.icons8.com/tapes/40/000000/experimental-search-tapes.png');
+    background-size: 6% 80%;
     background-position: 0px 0px; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding-left: 4em;
 }
 #seachBox:focus{
+    outline: none;
     background-color: white;
     border: #dbf0f2 solid 1px;
 }
 #head_searchLine{
    display: flex;
+   width: 100%;
+   height: 100%;
+   align-items: center;
    /* padding-left: 1em; */
    /* margin-left: auto; */
-    gap: 0px;
+    /* gap: 0px; */
 }
 #logo{
+    width: 18%;
+    height: 9vh;
+    /* border: 2px solid red; */
     /* border: solid; */
 }
-#seach{
-    display: flex;
-    flex-direction: row;
+#logo .image{
+    width: 100%;
+    height: 100%;
+}
+#logo .image img{
+    width: 100%;
+    height: 100%;
 }
 #searhBtn{
     color: #e5f4f6;
-    width: 10em;
-    height: 3.5em;
+    width: 20%;
+    height: 100%;
     background: -webkit-linear-gradient(0deg,#ff934b 0%,#ff5e62 100%);
-    border:#ccc;
-    border-radius: 4%;
+    border:2px solid #ff934b;
+    border-radius: 0 4px 4px 0;
 }
 #searhBtn:hover{
     cursor: pointer;
@@ -77,11 +112,16 @@ ul{
 /* seachbox end */
 /* head options strat */
 #head_options{
+    width: 28%;
+    height: 6vh;
+    /* background-color: red; */
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 1rem;
+    /* border: 2px solid red; */
+    /* padding-top: 1rem;
     padding-right: 7em;
-     gap: 2.5em;
+     gap: 2.5em; */
 
 }
 #Location{
@@ -144,15 +184,17 @@ text-decoration: underline;
     display: flex;
     align-items: center;
     background:#24a3b5;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    height:40px;
+    height:6vh;
      /* padding-top: 0.5em;
      padding-bottom: 0.5em; */
      margin-top: 1em;
-    z-index: 999;
+   
+    /* z-index: 9; */
 }
 .nav-links li a:hover{
+  height: 100%;
   background-color: white;
   color: #24a3b5;
   transition: all 0.5s ease;
@@ -160,6 +202,7 @@ text-decoration: underline;
 }
 .wrapper .nav-links{
     display: inline-flex;
+
 }
  .navUpper .wrapper{
     max-width: 100%;
@@ -169,12 +212,21 @@ text-decoration: underline;
     align-items: center;
 }
 .nav-links{
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    
 }
 .nav_li{
     text-decoration: none;
+    font-size: .9em;
+    font-weight: 500;
     color: white;
-    padding: 20px;
+    margin: 0 1em;
+    padding: 1.15em 1em;
+    
+    /* padding: 20px; */
 }
 #madeindia{
     height: 2.5em;
@@ -186,15 +238,20 @@ position: relative;
     display: flex;
     gap: 70px;
     position: absolute;
-    z-index: 1;
+    background-color: white;
+    z-index: 10;
     left: 0;
     top: calc(100% + 1em);
     padding: .75em;
     border-radius: .25em;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 500ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.htag{
+    font-size: .9em;
 }
 
 .dropdown > .nav_li:hover + .dropdownMenu{
@@ -212,28 +269,40 @@ pointer-events: auto;
 }
 .drop_text{
     text-decoration: none;
+    font-size: .9em;
     color: #757575;
-    
+    margin: .1em 1em;
 }
 .Fnav{
     border: solid;
 }
 .LowNav{
-    margin-top:55px;
+    /* margin-top:55px; */
+    width: 100%;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .wrap{
-    border: solid;
+    /* border: solid; */
+    margin:.5em auto;
+    text-align: center;
     display: flex;
     align-items: center;
-    /* width: 100%; */
+    width: 80%;
+    /* height:28px ; */
 }
 .Lvan_opt{
-    list-style-type: none;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .div_li{
+    margin: 0 1em;
     text-decoration: none;
-    color: black;
+    font-size: .9em;
+    color: rgb(94, 94, 94);
 }
 .div_li:hover{
     color: #24a3b5;

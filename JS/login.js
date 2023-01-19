@@ -1,6 +1,6 @@
 // here js is for only login popup
 
-let btn = document.getElementById("btn");
+let btn = document.getElementById("signIn");
 btn.addEventListener("click", () => {
   document.getElementById("overlay").classList.add("showoverlay");
   document.getElementById("loginform").classList.add("showloginform");
@@ -98,6 +98,8 @@ register.addEventListener("click", () => {
     if (isthere === false) {
         if(obj.password.length!==10){
             alert("Incorrect Mobile Number")
+        }else if(obj.email.length==0){
+            alert("Please enter email id!")
         }else{
             arr.push(obj);
             localStorage.setItem("register-Data", JSON.stringify(arr));
@@ -127,4 +129,7 @@ admin.addEventListener("click", () => {
         <div class="otpBtn-1">Register</div>
     `;
   appendSection.innerHTML = data;
+
+  let userAdminEmail=document.getElementById("adminemail");
+  let userAdminPassword=document.getElementById("password")
 });
