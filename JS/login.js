@@ -126,10 +126,15 @@ admin.addEventListener("click", () => {
         <div class="inputemail">
             <input type="password" name="input" id="password" placeholder="Enter Your Password">
         </div>
-        <div class="otpBtn-1">Register</div>
+        <div class="otpBtn-1" id="register3">Register</div>
     `;
   appendSection.innerHTML = data;
 
   let userAdminEmail=document.getElementById("adminemail");
   let userAdminPassword=document.getElementById("password")
+  let useradminregister=document.getElementById("register3")
+  useradminregister.addEventListener("click",()=>{
+    console.log(userAdminEmail.value)
+    console.log(userAdminPassword.value)
+  })
 });

@@ -45,38 +45,51 @@ button{
     z-index: 9;
     visibility: visible;
 }
-#loginformsec-1{
+.loginformsec-1{
+    /* border: 2px solid red; */
+    height: 100%;
     width: 28%;
-    display: inline-block;
+    box-sizing: border-box;
+    /* display: inline-block; */
     background-color: aliceblue;
     border-radius: 10px 0 0 10px;
 }
-#loginformsec-1 ul{
+.loginformsec-1 ul{
     list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     text-align: center;
     height: 100%;
+    /* border: 2px solid green; */
 }
-#loginformsec-1 ul li{
+.loginformsec-1 ul li{
     width: 100%;
+    display:block;
     height: 33.33%;
     /* background-color: red; */
-    padding: 1em;
+    /* padding: 1em; */
     box-sizing: border-box;
     font-size: .7em;
+    margin-right: 4em;
     /* border: 2px solid black; */
 }
-#loginformsec-1 ul li i{
+
+.loginformsec-1 ul li i{
     margin-top: .6em;
     font-size: 3em;
 }
-#loginformsec-1 ul li> h6{
+.loginformsec-1 ul li> h6{
     font-size: 1.5em;
     margin-top: .6em;
     font-weight: 500;
     color: rgb(142, 142, 142);
 }
 
-#loginformsec-1 ul li> p{
+.loginformsec-1 ul li> p{
     margin-top: .6em;
     color: rgb(142, 142, 142);
 }
