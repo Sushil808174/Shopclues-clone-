@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
-    <script src="https://kit.fontawesome.com/f96245ac11.js" crossorigin="anonymous"></script>
     <title>Product</title>
 </head>
 
@@ -17,21 +16,23 @@
             <div>
                 <h3>Category Filters</h3>
                 <details>
-                    <summary>Mobiles & Tablets (169)</summary>
+                    <summary id="mobile-tablets">Mobiles & Tablets <span id="mobile-tablet-ind"></span></summary>
                     <details>
-                        <summary>Refurbished Mobiles (168)</summary>                     
+                        <summary id="refurbished-mobile">Refurbished Mobiles <span id="Refurbished-Mobiles-ind"></span>
+                        </summary>
                     </details>
                     <details>
-                        <summary>Unboxed Tablets (1)</summary>                    
+                        <summary id="tablets">Unboxed Tablets <span id="Unboxed-Tablets-ind"></span></summary>
                     </details>
                 </details>
                 <details>
-                    <summary>Computers (9)</summary>
+                    <summary id="laptop">Laptops <span id="laptop-ind"></span></summary>
                     <details>
-                        <summary>Laptops (1)</summary>
+                        <summary id="newlaptop"> New Laptops <span id="newlaptop-ind"></span></summary>
                     </details>
                     <details>
-                        <summary>Refurbished Laptops (8)</summary>
+                        <summary id="refurbished-laptop">Refurbished Laptops <span id="refurbished-laptop-ind"></span>
+                        </summary>
                     </details>
                 </details>
                 <!-- <ul>
@@ -40,60 +41,81 @@
             </div>
             <div class="name">
                 <h3 class="h3">Discount <a href="" id="discount-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="discounts" value="20">Upto 20% (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="discounts" value="21-40">21 - 40% (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="discounts" value="41-60">41 - 60% (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="discounts" value="80">Upto 80% (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="discounts" value="Upto 20%">Upto 20% <span
+                            id="Upto-20%-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="discounts" value="21-40%">21 - 40% <span
+                            id="21-40%-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="discounts" value="41-60%">41 - 60% <span
+                            id="41-60%-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="discounts" value="61-80%">61 - 80% <span
+                            id="61-80%-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="discounts" value="More than 80%">Upto 80% <span
+                            id="More-than-80%-ind"></span></label></li>
             </div>
             <hr>
             <div>
                 <h3 class="h3">Price <a href="" id="price-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Prices" value="501-1000" >501 - 1000 (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Prices" value="1001-2500" >1001 - 2500 (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Prices" value="2501-5000">2501-5000 (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Prices" value="5001">Above 5000 (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="Prices" value="501-1000">501 - 1000 <span
+                            id="501-1000-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Prices" value="1001-2500">1001 - 2500 <span
+                            id="1001-2500-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Prices" value="2501-5000">2501-5000 <span
+                            id="2501-5000-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Prices" value="Upto 5000">Above 5000 <span
+                            id="Above-5000-ind"></span></label></li>
             </div>
             <hr>
             <div>
                 <h3 class="h3">Product Rating <a href="" id="Rating-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Ratings" id="">4 & above (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Ratings" id="">3 & above (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Ratings" id="">2 & above (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Ratings" id="">1 & above (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="Ratings" value="above 4">4 & above <span
+                            id="above-4-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Ratings" value="above 3">3 & above <span
+                            id="above-3-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Ratings" value="above 2">2 & above <span
+                            id="above-2-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Ratings" value="above 1">1 & above <span
+                            id="above-1-ind"></span></label></li>
             </div>
             <hr>
             <div>
                 <h3 class="h3">Brand <a href="" id="Brand-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Brands" id="">APPLE(<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Brands" id="">SAMSUNG (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Brands" id="">LENOVO(<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Brands" id="">HP (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Brands" id="">NOKIA(<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="Brands" value="APPLE">APPLE<span id="APPLE-ind"></span></label>
+                </li>
+                <li> <label><input type="checkbox" class="Brands" value="SAMSUNG">SAMSUNG <span
+                            id="SAMSUNG-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Brands" value="LENOVO">LENOVO<span
+                            id="LENOVO-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Brands" value="HP">HP <span id="HP-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Brands" value="NOKIA">NOKIA<span
+                            id="NOKIA-ind"></span></label></li>
             </div>
             <hr>
             <div>
                 <h3 class="h3">Item Condition <a href="" id="Condition-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Conditions" id="">New (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Conditions" id="">Refurbished - Expert Certified
-                        (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="Conditions" value="New">New <span id="New-ind"></span></label>
+                </li>
+                <li> <label><input type="checkbox" class="Conditions" value="Refurbished">Refurbished - Expert Certified
+                        <span id="Refurbished-ind"></span></label></li>
             </div>
         </div>
         <!-- product data  -->
         <div id="products">
             <h2>Refurb Store</h2>
             <div id="sorting">
-                <p><span>no</span> Products Founds</p>
-                <p>Sort By: <span id="h2l">High Price</span> | <span id="l2h">Low Price</span> | <span id="highRate">Popular Products</span> | <span id="newArrive">New
+                <p><span id="indexCount"></span> Products Founds</p>
+                <p>Sort By: <span id="h2l">High Price</span> | <span id="l2h">Low Price</span> | <span
+                        id="highRate">Popular Products</span> | <span id="newArrive">New
                         Arrivals</span></p>
             </div>
-            <div id="menu">    
+            <div id="menu">
                 <!-- append -->
-               
+
             </div>
         </div>
     </div>
     <div></div>
 </body>
+<script src="https://kit.fontawesome.com/f96245ac11.js" crossorigin="anonymous"></script>
 <script src="product.js"></script>
 
 </html>

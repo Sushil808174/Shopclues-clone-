@@ -22,7 +22,7 @@
 
 }
 :root {
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --padding: 0.7em;
   --border-radious:1%;
 }
@@ -119,8 +119,11 @@ a{
   
 
   /* sort btn  */
-  #l2h:hover,#h2l:hover,#newArrive:hover,#highRate:hover{
+  #l2h:hover,#h2l:hover,#newArrive:hover,#highRate:hover,#mobile-tablets:hover,#refurbished-mobile:hover,#tablets:hover,#laptop:hover,#newlaptop:hover,#refurbished-laptop:hover{
     color: blue;
     cursor: pointer;
+  }
+  #l2h:hover,#h2l:hover,#newArrive:hover,#highRate:hover{
+    border-bottom: 1px solid teal;
   }
 
