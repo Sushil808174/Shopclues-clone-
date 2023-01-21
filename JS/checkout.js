@@ -36,33 +36,41 @@ let description = document.getElementById("description")
 
 
 
+let arr=JSON.parse(localStorage.getItem("landingpage")) || [];
 
 
-
- let obj={
-    "id":10,
-    "name":"Nokia Referbished",
-    "profile": "https://cdn.shopclues.com/images1/thumbnails/56727/320/320/85444779-56727506-1668506622.jpg",
-    "price1": "929",
-    "price" : 929,
-    "description": "Refurbished Nokia 1110I Single Sim Feature Phone (Assorted colours)"
- }
+//  let obj={
+//     "id":10,
+//     "name":"Nokia Referbished",
+//     "profile": "https://cdn.shopclues.com/images1/thumbnails/56727/320/320/85444779-56727506-1668506622.jpg",
+//     "price1": "929",
+//     "price" : 929,
+//     "description": "Refurbished Nokia 1110I Single Sim Feature Phone (Assorted colours)"
+//  }
 
        let card=document.getElementById("card-wrapper")
-       console.log(card)
-renderpage(obj.id,obj.name,obj.profile,obj.price,obj.description);
-let section=document.getElementById("productsection")
+//        console.log(card)
+// renderpage(obj.id,obj.name,obj.profile,obj.price,obj.description);
+// let section=document.getElementById("productsection")
+forrendering(arr)
+function forrendering(data){
+    let res=data.map((element)=>{
+        return renderpage(element.id,element.name,element.profile, element.price,element.description)
+    })
+    card.innerHTML=res;
 
-function renderpage(id,name,img,price,desc){
+}
+
+function renderpage(id,name,img,price=3999,desc){
     console.log(name,id)
-    card.innerHTML=`<div class="prdct-img"><img
+    let data=`<div class="prdct-img"><img
     src=${img}
     alt=""></div>
 <div class="prdct-info">
 <div>
-    <h3>
+    <h1>
         ${name}
-    </h3>
+    </h1>
 </div>
 <div class="def_flex">
     <div>branded</div>
@@ -108,6 +116,6 @@ function renderpage(id,name,img,price,desc){
 </div>
 </div>`
 
-
+return data;
 }
 

@@ -22,13 +22,26 @@ let otpBtn = document.getElementById("otpBtn");
 let appendSection = document.getElementById("inputpart");
 
 otpBtn.addEventListener("click", () => {
-  // console.log(userEmail.value)
-  // var a = Math. floor(1000 + Math. random() * 9000);
-  // alert(a)
-  // if(Number(userOtp.value) === a){
-  //     window.location.href="./admin.html"
-  // }
-  //   input.innerHTML = null;
+  if (arr.length === 0) {
+    alert("No User Till Now");
+    return;
+  }
+  let obj = {
+    email: userLoginEmail.value,
+    password: userOtp.value,
+  };
+  let flag = true;
+  arr.forEach(function (el) {
+    if (el.email === obj.email && el.password === obj.password) {
+      flag = false;
+      localStorage.setItem("signin", JSON.stringify(el));
+      alert("sign in Sucessfull");
+      window.location.href = "admin1.html";
+    }
+  });
+  if (flag === true) {
+    alert("user not Exist");
+  }
 });
 
 // ****************************************************************************
@@ -43,14 +56,39 @@ login.addEventListener("click", () => {
 
   let data = `
         <div class="inputemail">
-        <input type="text" name="input" id="email" placeholder="Enter Your mobile number or email id">
+        <input type="text" name="input" id="email" placeholder="Enter Your email id">
         </div>
         <div class="inputemail">
-        <input type="text" name="input" id="otp" placeholder="Enter OTP here">
+        <input type="text" name="input" id="otp" placeholder="Enter your password here">
         </div>
-        <div class="otpBtn" id="otpBtn">Login via OTP</div>
+        <div class="otpBtn" id="otpBtn">Login via email id or mobile no</div>
         `;
   appendSection.innerHTML = data;
+  let userLoginEmail = document.getElementById("email");
+  let userOtp = document.getElementById("otp");
+  let otpBtn = document.getElementById("otpBtn");
+  let appendSection = document.getElementById("inputpart");
+  otpBtn.addEventListener("click", () => {
+    if (arr.length === 0) {
+      alert("No User Till Now");
+      return;
+    }
+    let obj = {
+      email: userLoginEmail.value,
+      password: userOtp.value,
+    };
+    let flag = true;
+    arr.forEach(function (el) {
+      if (el.email === obj.email && el.password === obj.password) {
+        flag = false;
+        localStorage.setItem("signin", JSON.stringify(el));
+        alert("sign in Sucessfull");
+      }
+    });
+    if (flag === true) {
+      alert("user not Exist");
+    }
+  });
 });
 
 // register section
@@ -66,7 +104,7 @@ register.addEventListener("click", () => {
         <input type="email" name="input" id="email" placeholder="Enter Your email id" required>
         </div>
         <div class="inputemail">
-        <input type="number" name="input" id="mobile" placeholder="Enter Your mobile number">
+        <input type="text" name="input" id="mobile" placeholder="Enter Your mobile number">
         </div>
         <div class="inputemail">
         <input type="password" name="input" id="password" placeholder="Enter Your Password">
@@ -96,15 +134,13 @@ register.addEventListener("click", () => {
       }
     }
     if (isthere === false) {
-        if(obj.password.length!==10){
-            alert("Incorrect Mobile Number")
-        }else if(obj.email.length==0){
-            alert("Please enter email id!")
-        }else{
-            arr.push(obj);
-            localStorage.setItem("register-Data", JSON.stringify(arr));
-            alert("Your registeration successful!!");
-        }
+      if (obj.mobile.length !== 10) {
+        alert("Incorrect Mobile Number");
+      } else {
+        arr.push(obj);
+        localStorage.setItem("register-Data", JSON.stringify(arr));
+        alert("Your registeration successful!!");
+      }
     } else {
       alert("This Email id is already registered!");
     }
@@ -130,11 +166,34 @@ admin.addEventListener("click", () => {
     `;
   appendSection.innerHTML = data;
 
-  let userAdminEmail=document.getElementById("adminemail");
-  let userAdminPassword=document.getElementById("password")
-  let useradminregister=document.getElementById("register3")
-  useradminregister.addEventListener("click",()=>{
-    console.log(userAdminEmail.value)
-    console.log(userAdminPassword.value)
-  })
+  const userlogin = "http://localhost:3000/ragister";
+  let loginUserUsername = document.getElementById("adminemail");
+  let loginUserPassword = document.getElementById("password");
+  let loginUserButton = document.getElementById("ragister3");
+
+  loginUserButton.addEventListener("click", async function () {
+    let userName = loginUserUsername.value;
+    let password = loginUserPassword.value;
+
+    let userObj = {
+      username: userName,
+      password: password,
+    };
+
+    try {
+      let res = await fetch(userlogin, {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(userObj),
+      });
+      // let data = await res.json();
+      // let userAuthToken = data.accessToken;
+      // localStorage.setItem("localAccessToken", data.accessToken);
+      alert("user successfully logged in.");
+    } catch (error) {
+      alert("Err.", JSON.stringify(error));
+    }
+  });
 });
