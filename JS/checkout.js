@@ -1,61 +1,64 @@
 let description = document.getElementById("description")
-    let p = document.createElement("p")
-    document.getElementById("prdct-spec").addEventListener("click", (e) => {
-        // console.log("working")
-        description.innerHTML = ""
-        e.preventDefault()
-        description.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
-        description.append(p)
-    })
+let pdesc=document.getElementById("prdct-desc")
+let pspec=document.getElementById("prdct-spec")
+let linfo=document.getElementById("legal-info")
+let p = document.createElement("p")
+pdesc.style.textDecoration="underline"
+
+document.getElementById("prdct-spec").addEventListener("click", (e) => {
+    // console.log("working")
+    pdesc.style.textDecoration="none"
+    pspec.style.textDecoration="underline"
+    linfo.style.textDecoration="none"
+    description.innerHTML = ""
+    e.preventDefault()
+    description.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
+    description.append(p)
+})
+
+document.getElementById("prdct-desc").addEventListener("click", (e) => {
+    // console.log("working")
+
+    pdesc.style.textDecoration="underline"
+    pspec.style.textDecoration="none"
+    linfo.style.textDecoration="none"
+    description.innerHTML = ""
+    e.preventDefault();
+    p.innerText = `tushar Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
+    description.append(p)
+})
+let legalinfo = document.getElementById("legal-info")
+legalinfo.addEventListener("click", (e) => {
+    description.innerHTML = ""
+    pdesc.style.textDecoration="none"
+    pspec.style.textDecoration="none"
+    linfo.style.textDecoration="underline"
+    e.preventDefault()
+    p.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
+    description.append(p)
+})
 
 
+// let obj = {
+//     "id": 10,
+//     "name": "Nokia Referbished",
+//     "profile": "https://cdn.shopclues.com/images1/thumbnails/56727/320/320/85444779-56727506-1668506622.jpg",
+//     "price1": "929",
+//     "price": 929,
+//     "description": "Refurbished Nokia 1110I Single Sim Feature Phone (Assorted colours)"
+// }
+// localStorage.setItem("checkout",JSON.stringify(obj));
+let obj= JSON.parse(localStorage.getItem("checkout"))
+// let obj = x;
 
-    document.getElementById("prdct-desc").addEventListener("click", (e) => {
-        // console.log("working")
-        description.innerHTML = ""
-        e.preventDefault()
+let card = document.getElementById("card-wrapper")
 
+renderpage(obj.id, obj.name, obj.profile, obj.price, obj.description);
+let section = document.getElementById("productsection")
 
-        p.innerText = `tushar Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
-        description.append(p)
-    })
-
-
-
-
-    let legalinfo = document.getElementById("legal-info")
-    legalinfo.addEventListener("click", (e) => {
-        // console.log("working")
-        // legalinfo.style.color="blue"
-        description.innerHTML = ""
-        e.preventDefault()
-        p.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
-        description.append(p)
-    })
-
-
-
-
-
-
-
- let obj={
-    "id":10,
-    "name":"Nokia Referbished",
-    "profile": "https://cdn.shopclues.com/images1/thumbnails/56727/320/320/85444779-56727506-1668506622.jpg",
-    "price1": "929",
-    "price" : 929,
-    "description": "Refurbished Nokia 1110I Single Sim Feature Phone (Assorted colours)"
- }
-
-       let card=document.getElementById("card-wrapper")
-       console.log(card)
-renderpage(obj.id,obj.name,obj.profile,obj.price,obj.description);
-let section=document.getElementById("productsection")
-
-function renderpage(id,name,img,price,desc){
-    console.log(name,id)
-    card.innerHTML=`<div class="prdct-img"><img
+function renderpage(id, name, img, price, desc) {
+    console.log(name, id)
+    card.innerHTML = `<div class="prdct-img"><img
     src=${img}
     alt=""></div>
 <div class="prdct-info">
@@ -82,8 +85,8 @@ function renderpage(id,name,img,price,desc){
     <h4>1 offer applicable for you</h5>
 </div>
 <div class="cart-buy">
-    <div class="cartbtn"><a href=""><img class="buybtn" src="/image/addtocart.png" alt=""></a></div>
-    <div><a href=""><img class="buybtn" src="/image/Screenshot_20230118_085337.png" alt=""></a>
+    <div class="cartbtn"><a href=""><div class="btn orange">ADD TO CART</div></a></div>
+    <div><a href=""><div class="btn orange">BUY NOW</div></a>
     </div>
 </div>
 <div class="pinsec">
@@ -107,7 +110,29 @@ function renderpage(id,name,img,price,desc){
 </div>
 </div>
 </div>`
+    let cartdata = JSON.parse(localStorage.getItem("add-to-cart")) || []
+    // localStorage.removeItem("add-to-cart")
+    console.log(cartdata)
+    let add = document.querySelector(".cartbtn")
+    add.addEventListener("click", () => {
+        // console.log("hello")
+        let flag=true
+    for(let i=0;i<cartdata.length;i++){
+            if(obj.id==cartdata[i].id){
+                alert("product alerady added in cart")
+                flag=false
+                break;
+            }
+        }
+        
+if(flag){
+        obj.quantity = 1;
+        cartdata.push(obj);
+        localStorage.setItem("add-to-cart", JSON.stringify(cartdata));
+        alert("product added successfully")
+}
 
 
+    })
 }
 
