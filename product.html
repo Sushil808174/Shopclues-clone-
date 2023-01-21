@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
     <title>Product</title>
-    <script src="https://kit.fontawesome.com/f96245ac11.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./CSS/product.css">
 </head>
+
 <body>
     <div id="main">
         <!-- all functions -->
@@ -15,33 +16,23 @@
             <div>
                 <h3>Category Filters</h3>
                 <details>
-                    <summary>Mobiles & Tablets (169)</summary>
+                    <summary id="mobile-tablets">Mobiles & Tablets <span id="mobile-tablet-ind"></span></summary>
                     <details>
-                        <summary>Refurbished Mobiles (168)</summary>
-                        <details>
-                            <summary>Refurbished Smartphones (17)</summary>
-                        </details>
-                        <details>
-                            <summary>Refurbished Feature Phones (151)</summary>
-                        </details>
+                        <summary id="refurbished-mobile">Refurbished Mobiles <span id="Refurbished-Mobiles-ind"></span>
+                        </summary>
                     </details>
                     <details>
-                        <summary>Unboxed Tablets (1)</summary>
-                        <details>
-                            <summary>Unboxed Tablets - Expert Certified (1)</summary>
-                        </details>
+                        <summary id="tablets">Unboxed Tablets <span id="Unboxed-Tablets-ind"></span></summary>
                     </details>
                 </details>
                 <details>
-                    <summary>Computers (9)</summary>
+                    <summary id="laptop">Laptops <span id="laptop-ind"></span></summary>
                     <details>
-                        <summary>Laptops (1)</summary>
+                        <summary id="newlaptop"> New Laptops <span id="newlaptop-ind"></span></summary>
                     </details>
                     <details>
-                        <summary>Refurbished Laptops (8)</summary>
-                        <details>
-                            <summary>Refurbished Laptops - Good Condition (8)</summary>
-                        </details>
+                        <summary id="refurbished-laptop">Refurbished Laptops <span id="refurbished-laptop-ind"></span>
+                        </summary>
                     </details>
                 </details>
                 <!-- <ul>
@@ -50,101 +41,81 @@
             </div>
             <div class="name">
                 <h3 class="h3">Discount <a href="" id="discount-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="discounts" id="">Upto 20% (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="discounts" id="">21 - 40% (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="discounts" id="">41 - 60% (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="discounts" id="">Upto 80% (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="discounts" value="Upto 20%">Upto 20% <span
+                            id="Upto-20%-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="discounts" value="21-40%">21 - 40% <span
+                            id="21-40%-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="discounts" value="41-60%">41 - 60% <span
+                            id="41-60%-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="discounts" value="61-80%">61 - 80% <span
+                            id="61-80%-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="discounts" value="More than 80%">Upto 80% <span
+                            id="More-than-80%-ind"></span></label></li>
             </div>
             <hr>
             <div>
                 <h3 class="h3">Price <a href="" id="price-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Prices" id="">501 - 1000 (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Prices" id="">1001 - 2500 (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Prices" id="">2501-5000 (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Prices" id="">Above 5000 (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="Prices" value="501-1000">501 - 1000 <span
+                            id="501-1000-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Prices" value="1001-2500">1001 - 2500 <span
+                            id="1001-2500-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Prices" value="2501-5000">2501-5000 <span
+                            id="2501-5000-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Prices" value="Upto 5000">Above 5000 <span
+                            id="Above-5000-ind"></span></label></li>
             </div>
             <hr>
             <div>
                 <h3 class="h3">Product Rating <a href="" id="Rating-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Ratings" id="">4 & above (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Ratings" id="">3 & above (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Ratings" id="">2 & above (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Ratings" id="">1 & above (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="Ratings" value="above 4">4 & above <span
+                            id="above-4-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Ratings" value="above 3">3 & above <span
+                            id="above-3-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Ratings" value="above 2">2 & above <span
+                            id="above-2-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Ratings" value="above 1">1 & above <span
+                            id="above-1-ind"></span></label></li>
             </div>
             <hr>
             <div>
                 <h3 class="h3">Brand <a href="" id="Brand-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Brands" id="">Apple (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Brands" id="">AXL (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Brands" id="">Blackberry (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Brands" id="">HP (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Brands" id="">Dell (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="Brands" value="APPLE">APPLE<span id="APPLE-ind"></span></label>
+                </li>
+                <li> <label><input type="checkbox" class="Brands" value="SAMSUNG">SAMSUNG <span
+                            id="SAMSUNG-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Brands" value="LENOVO">LENOVO<span
+                            id="LENOVO-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Brands" value="HP">HP <span id="HP-ind"></span></label></li>
+                <li> <label><input type="checkbox" class="Brands" value="NOKIA">NOKIA<span
+                            id="NOKIA-ind"></span></label></li>
             </div>
             <hr>
             <div>
                 <h3 class="h3">Item Condition <a href="" id="Condition-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Conditions" id="">New (<span>25</span>)</label></li>
-                <li> <label><input type="checkbox" class="Conditions" id="">Refurbished - Expert Certified
-                        (<span>25</span>)</label></li>
+                <li><label><input type="checkbox" class="Conditions" value="New">New <span id="New-ind"></span></label>
+                </li>
+                <li> <label><input type="checkbox" class="Conditions" value="Refurbished">Refurbished - Expert Certified
+                        <span id="Refurbished-ind"></span></label></li>
             </div>
         </div>
         <!-- product data  -->
         <div id="products">
             <h2>Refurb Store</h2>
             <div id="sorting">
-                <p><span>no</span> Products Founds</p>
-                <p>Sort By: <span>High Price</span> | <span>Low Price</span> | <span>Popular Products</span> | <span>New
+                <p><span id="indexCount"></span> Products Founds</p>
+                <p>Sort By: <span id="h2l">High Price</span> | <span id="l2h">Low Price</span> | <span
+                        id="highRate">Popular Products</span> | <span id="newArrive">New
                         Arrivals</span></p>
             </div>
-            <!-- append -->
             <div id="menu">
-                <div class="card">
-                    <img src="https://media.istockphoto.com/id/1313901506/photo/cropped-shot-of-an-african-american-young-woman-using-smart-phone-at-home-smiling-african.jpg?s=612x612&w=0&k=20&c=geSmPOcfVl3aJ13j4XIDG85LZVbOVPhYsCBJ1I0BVrk=" alt="">
-                    <p>Refurbished Nokia 1600 Single Sim Feature phone 1.4 inches</p>
-                    <div>
-                        <h3 class="actual-price">₹899</h3>
-                        <h3 class="original-price"> ₹1899</h3>
-                        <h3 class="parcentage">53% Off</h3>
-                    </div>
-                    <p>Refurbished</p>
-                    <i class="fa-sharp fa-solid fa-star-sharp"></i>
-                </div>
-                <div class="card">
-                    <img src="https://media.istockphoto.com/id/1312133528/photo/be-genuine-be-remarkable-be-worth-connecting-with.jpg?s=612x612&w=0&k=20&c=mgrGuJSlE-f6Tcxu59vrWEcAwuoEF2cJwZtminMbqMQ=" alt="">
-                    <p>Refurbished Nokia 1600 Single Sim Feature phone 1.4 inches</p>
-                    <div>
-                        <h3>899</h3>
-                        <p> 1899</p>
-                        <h3>53% Off</h3>
-                    </div>
-                    <p>Refurbished</p>
-                    rate
-                </div>
-                <div class="card">
-                    <img src="https://media.istockphoto.com/id/1153863127/photo/smiling-businesswoman-using-phone-in-office.jpg?s=612x612&w=0&k=20&c=pHHOhuqfEr8JBuys8zwQX-l2yjna16wbPCWocqxwDCU=" alt="">
-                    <p>Refurbished Nokia 1600 Single Sim Feature phone 1.4 inches</p>
-                    <div>
-                        <h3>899</h3>
-                        <p> 1899</p>
-                        <h3>53% Off</h3>
-                    </div>
-                    <p>Refurbished</p>
-                    rate
-                </div>
-                <div class="card">
-                    <img src="https://media.istockphoto.com/id/1278009593/photo/young-man-using-smart-phone-at-home.jpg?s=612x612&w=0&k=20&c=eErVmquQwbbLsP7Oauw-2pvM6y0icEQv2v1qzDqBx6o=" alt="">
-                    <p>Refurbished Nokia 1600 Single Sim Feature phone 1.4 inches</p>
-                    <div>
-                        <h3>899</h3>
-                        <p> 1899</p>
-                        <h3>53% Off</h3>
-                    </div>
-                    <p>Refurbished</p>
-                    rate
-                </div>
+                <!-- append -->
+
             </div>
         </div>
     </div>
+    <div></div>
 </body>
-<script src="./JS/product.js"></script>
+<script src="https://kit.fontawesome.com/f96245ac11.js" crossorigin="anonymous"></script>
+<script src="product.js"></script>
+
 </html>
