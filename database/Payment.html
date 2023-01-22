@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./CSS/payment.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <head>
+        <div class="head">
+            <div id="logo">
+                <img id="img" src="./image/shopeasy-logo.png" alt="">
+            </div>
+            <div id="selector">
+                <div class="selectors">
+                    <div class="c_box">
+                        <div class="cr2">
+                            <h2 style="background: white; color: #24a3b5;" class="In_c">1</h2>
+                        </div>
+                        <h5 style=" background: white; color: #00bc71;">select Address</h5>
+                    </div>
+                    <div class="c_box">
+                        <div class="cr1">
+                            <h2 class="In_C">2</h2>
+                        </div>
+                        <h5 style="background: white; ">Select Payment</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </head>
+    <div class="body">
+        <div class="pay_mode">
+            <h3>Select Payment Mode</h3><br><br>
+            <div class="card_opt">
+                <label class="radio">
+                    <input type="radio">
+                    Debit Card
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="card_opt">
+                <label class="radio">
+                    <input type="radio">
+                    Credit Card
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="card_opt">
+                <label class="radio">
+                    <input type="radio">
+                    Cash on Delivery
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="Card">
+            <h3 style="margin: 9px;">Credit Card</h3><br><br>
+            <div class="card_body">
+                        <div id="form">
+                        <form action="/">
+                            <input class="card_inp" id="card_num" placeholder="Enter card number" type="text" style="width: 90%; margin: 8px;" required>
+                            <div style=" background: white;">
+                                <input class="card_inp" id="MM" placeholder="MM" type="text" style="width: 30%;" required><input type="text" id="YY" placeholder="YY" class="card_inp" style="width: 30%; margin: 8px;" required>
+                            </div>
+                            <input type="text" class="card_inp" id="cvv" placeholder="CVV" style="margin: 8px;" required>
+                            <input type="text" class="card_inp" id="Name" placeholder="Enter name on card" style="width: 90%; margin: 8px;" required>
+                            <input type="text" class="card_inp" placeholder="Nickname(for easy identification)" style="width: 90%; margin: 8px;" required>
+                            <input type="submit" id="btn">
+                            
+                        </form>
+                       
+                        </div>
+                        
+                    
+            </div>
+            <div id="card_img">
+                <div id="img" style="background: white;">
+                    <img src="https://pay.momoe.in/payment/img/security_logos.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Bank">
+            <div id="cashback">
+                <span style="color: #ff5e62; margin: 2px;" class="material-symbols-outlined">
+                    credit_card
+                    </span>
+                    <p style="margin: 9px;">Get 100% CashBack instantly on prepaid orders! Place order using Debit/Credit cards, Net Banking, Wallets, UPI etc.. and get 309 CluesBucks+ instantly</p>
+            </div>
+            <br>
+            <br>
+            <div class="option">
+                <div class="zest">
+                    <img style="height: 20px; width: 30px;" src="https://cdn.shopclues.com/images/ui/zestmoney_ico.png" alt="">
+                    <p>Rs.121 Supercash* on placing order via ZestMoney, T&C Apply</p>
+                </div>
+                <div class="zest">
+                    <img style="height: 20px; width: 30px;"  src="https://images.shopclues.com/images/ui/wallet_logo/post_promotion/mobikwik.png" alt="">
+                    <p>Rs.91 Supercash* on placing order via Mobikwik, T&C Apply</p>
+                </div>
+                <div class="zest">
+                    <img style="height: 20px; width: 30px;"  src="https://images.shopclues.com/images/ui/wallet_logo/post_promotion/airtel.png" alt="">
+                    <p>Rs.60 Cashback* on your first order with Airtel Payments Bank, T&C Apply</p>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+</body>
+<script>
+    let btn = document.getElementById("btn")
+    let cardnum = document.getElementById("card_num")
+    let mm = document.getElementById("MM")
+    let yy = document.getElementById("YY")
+    let cvv = document.getElementById("cvv")
+    let name = document.getElementById("Name")
+    btn.addEventListener("click", (e) =>{
+        e.preventDefault()
+       if(cardnum.value.length<16){ alert("Please Enter 16 digits of your Card")}
+       else if(mm.value.length==0 && yy.value.length==0){
+        alert("Please write your card expire date")
+       }else if(cvv.value.length<3){alert("Please enter your CVV")}
+       else if(name.value.length==0){alert("Please enter name on Card")}
+       else{
+        alert(` Congratulation.."${name.value}"🤩 your product will be delivered soon 😀`)
+        window.location.href="index.html"
+
+       }
+        
+        
+    })
+</script>
+</html>

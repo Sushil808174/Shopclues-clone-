@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    position: fixed;
+    top: 0%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+    opacity: 0;
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.loginform{
+    width: 60%;
+    height: 75vh;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:10px ;
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    visibility: hidden;
+}
+
+.showloginform{
+    top: 50%;
+    z-index: 9;
+    visibility: visible;
+}
+
+.loginformsec-1{
+    width: 28%;
+    background-color: aliceblue;
+    border-radius: 10px 0 0 10px;
+}
+.loginformsec-1 ul{
+    list-style: none;
+    text-align: center;
+    height: 100%;
+}
+.loginformsec-1 ul li{
+    width: 100%;
+    height: 33.33%;
+    /* background-color: red; */
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: .7em;
+    /* border: 2px solid black; */
+}
+.loginformsec-1 ul li i{
+    margin-top: .6em;
+    font-size: 3em;
+}
+.loginformsec-1 ul li> h6{
+    font-size: 1.5em;
+    margin-top: .6em;
+    font-weight: 500;
+    color: rgb(142, 142, 142);
+}
+
+.loginformsec-1 ul li> p{
+    margin-top: .6em;
+    color: rgb(142, 142, 142);
+}
+
+.loginformsec-2{
+    width: 72%;
+    height: 100%;
+}
+.loginformsec-2 > .mainloginsec{
+    /* background-color: red; */
+    height: 70%;
+    margin:1em 2em 2em 2em;
+}
+.close{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: .4em;
+    font-size: 1.5em;
+    line-height: .7em;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 0 10px 0 0;
+    color: rgb(135, 133, 133);
+}
+.close:hover{
+    background-color: rgb(206, 206, 206);
+    cursor: pointer;
+    color: black;
+}
+.loginregister{
+    width: 80%;
+}
+.loginregister a{
+    text-decoration: none;
+    margin: .5em 1em;
+    font-size: 1.3em;
+    color: rgb(78, 78, 78);
+}
+.admintext{
+    color: teal;
+    border-bottom: 2px solid teal;
+    padding-bottom: .25em;
+}
+.loginformsec-2 .inputpart{
+    /* background-color: white; */
+    width: 90%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    height: 30%;
+}
+.inputemail{
+    margin: 2em 0em;
+    /* background-color: rgb(198, 167, 167); */
+}
+#adminemail{
+    padding: .5em;
+    border: none;
+    width: 90%;
+    border-bottom:1px solid rgba(0, 0, 0, .5) ;
+}
+#adminemail:focus,#password:focus{
+    outline: none;
+    border-bottom: 2px solid teal;
+}
+.otpBtn-1{
+    width: 40%;
+    /* background-color: yellow; */
+    background-image: linear-gradient(to right, orange , red);
+    padding: .8em .5em;
+    border: 1px solid orange;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    border-radius: 4px;
+
+}
+.otpBtn-1:hover{
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 4px;
+}
+
+
+@media screen and (max-width:1024px){
+    .loginregister a{
+        margin: .5em;
+    }
+    .loginregister a{
+        font-size: 1.1em;
+    }
+}

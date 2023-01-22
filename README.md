@@ -1,1 +1,9 @@
-# -subdued-neck-2197
+## Installation
+```
+npm i
+```
+
+## Start only Backend server
+```
+npm start
+```
