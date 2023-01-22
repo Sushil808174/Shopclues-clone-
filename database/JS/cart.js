@@ -57,7 +57,7 @@ else {
     }
 
     function renderpage(data) {
-        mainsection.innerHTML = `${data.map((item, index) => getcard(item.id, item.title, item.price, item.description, item.profile, item.quantity)).join("")}`
+        mainsection.innerHTML = `${data.map((item, index) => getcard(item.id, item.title, item.price, item.description, item.image, item.quantity)).join("")}`
         // =================incriment button======================================================
         let inc = document.querySelectorAll(".incriment-btn")
 
@@ -124,8 +124,8 @@ else {
             grand_total += item.price * item.quantity
         })
         // console.log(grand_total)
-        total.innerText = grand_total
-        gtotal.innerText = grand_total
+        total.innerText ="₹"+grand_total
+        gtotal.innerText = "₹"+grand_total
         // ==========================================================================================================
     }
 }
