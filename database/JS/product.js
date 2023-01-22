@@ -540,15 +540,15 @@ function display(data) {
   let clickDiv = document.querySelectorAll(".checkout");
   // let cartData = JSON.parse(localStorage.getItem("checkOutData")) || [];
 
-  let checkoutpagegone=document.querySelectorAll(".checkoutpagegone");
+  // let checkoutpagegone=document.querySelectorAll(".checkoutpagegone");
   // checkoutpagegone.addEventListener("click",()=>{
   //   window.location.href="checkout.html"
   // })
-  for(let clickpagebtn of checkoutpagegone){
-    clickpagebtn.addEventListener("click",()=>{
-      window.location.href="checkout.html"
-    })
-  }
+  // for(let clickpagebtn of checkoutpagegone){
+  //   clickpagebtn.addEventListener("click",()=>{
+  //     window.location.href="checkout.html"
+  //   })
+  // }
 
 
   for (let btn of clickDiv) {
@@ -557,6 +557,7 @@ function display(data) {
       // let cartData = [];
       data.forEach((element) => {
         if (element.id === e.target.dataset.id) {
+          window.location.href="checkout.html"
           // cartData.push(element);
           localStorage.setItem("checkout", JSON.stringify(element));
         }
