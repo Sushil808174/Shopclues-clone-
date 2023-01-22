@@ -28,7 +28,7 @@ window.addEventListener("load",()=>{
 })
 
 async function fetchandrenderdata(){
-    let response=await fetch("http://localhost:3000/Homepage?_limit=6&_page=1");
+    let response=await fetch("http://localhost:3000/Mobile&Laptop?_limit=6&_page=2");
     let res=await response.json();
     console.log(res)
     cartdata(res)
@@ -65,13 +65,13 @@ function cartdata(data){
         let div2=document.createElement("div");
         div2.setAttribute("class","dealblock")
         let imgage=document.createElement("img");
-        imgage.setAttribute("src",element.profile);
+        imgage.setAttribute("src",element.image);
         div2.append(imgage)
         let h2=document.createElement("h2");
-        h2.innerHTML=element.title;
+        h2.innerHTML=element.title.substring(0,40);
         let span1=document.createElement("span")
         let icon=document.createElement("i");
-        // icon.setAttribute("class","fa-solid fa-indian-rupee-sign")
+        icon.setAttribute("class","fa-solid fa-indian-rupee-sign")
         span1.append(icon)
         
         let span2=document.createElement("span")
@@ -155,7 +155,7 @@ function gadgetcartdata(data){
 
 let brandstore=document.getElementById("brandstore");
 async function forbrandstore(){
-    let response=await fetch("http://localhost:3000/Homepage?_limit=6&_page=7");
+    let response=await fetch("http://localhost:3000/Homepage?_limit=6&_page=3");
     let res=await response.json();
     storebrandData(res)
 }
