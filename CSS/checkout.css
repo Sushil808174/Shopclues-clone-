@@ -1,0 +1,315 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(239, 247, 250);
+}
+
+/*======================================================== colors classes ========================================================*/
+.blue {
+    color: rgb(69, 149, 230);
+}
+
+.grey {
+    color: rgb(89, 84, 84);
+}
+
+/* ========================================================tag selectors======================================================== */
+span {
+    margin: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    width: 100%;
+}
+
+/*======================================================= checkout section=====================================================*/
+
+.desc {
+    margin: auto;
+    /* margin:0%; */
+    background-color: white;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    margin-bottom: 10px;
+
+}
+
+.container {
+    /* background-color: rgb(173, 224, 243); */
+
+}
+
+.card-wrapper {
+    margin: auto
+}
+
+.prdct-img>img {
+    width: 300px;
+    height: 300px;
+    /* position: relative; */
+
+    /* margin: auto; */
+}
+
+.prdct-img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* background-color: brown; */
+}
+
+.prdct-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* width: 100%; */
+    /* margin: 0%; */
+    padding: 0%;
+}
+
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 200px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 10px;
+    width: 87%;
+    margin: 10px;
+    padding: 15px;
+}
+
+
+
+.def_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+.sell-info {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infowrapper {
+    /* width; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:flex-start; */
+    /* margin: auto; */
+    /* background-color: rgb(104, 66, 66); */
+}
+
+
+
+/* =======================================product information section ============================================================================  */
+.card-wrapper>div {
+    padding-top: 2em;
+}
+
+.prdct-info {
+    line-height: 25px;
+    height: auto;
+}
+
+
+
+
+
+/* ========================================================add to cart and buy button======================================================== */
+.cart-buy {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cartbtn button {
+    padding: 2px;
+    color: rgb(251, 118, 11);
+    border: 1px solid rgb(251, 118, 11);
+    background-color: white;
+}
+
+.buybtn {
+    height: 40px;
+    width: 150px;
+}
+
+.buybtn button {
+    border: none;
+}
+
+.offers {
+    color: rgb(104, 101, 101);
+}
+
+.price {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+/*==============================================pincodesection========================================================*/
+.pinsec {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+
+}
+#pincheck:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+#pincheck {
+    background-color: white;
+    padding: 8px;
+    border: 1px solid rgb(132, 173, 234);
+    color: rgb(132, 173, 234);
+    width: 100px;
+    font-weight: bold;
+}
+
+#pininput {
+    padding: 8px;
+    border: 1px solid grey;
+    font-weight: bolder;
+    /* font-size:20; */
+}
+
+#delivery-option {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+
+/* details section ======================== */
+
+
+/* ========================================================description section ======================================================== */
+.desc-wrapper {
+    /* height: 300px; */
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    color: rgb(83, 80, 80);
+
+}
+
+.desc-op {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#description {
+    width: 100%;
+    height: auto;
+}
+
+/* .descpara{
+
+} */
+
+.active:hover {
+    color: rgb(132, 173, 234);
+}
+
+#prdct-desc:visited {
+    color: rgb(255, 174, 0);
+}
+
+.productsection {
+    background-color: white;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.mainsection {
+    width: 95%;
+    margin: auto;
+}
+
+.bold {
+    font-weight: 200;
+}
+
+.details {
+    margin: 20px 0px 20px 0px;
+}
+/* 
+.pinsec {
+    width: 70%;
+} */
+
+#delivery-option {
+    width: 90%;
+}
+#description{
+    line-height: 25px;
+    /* word-wrap: normal; */
+    /* width: 60%; */
+}
+.buybtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.prdct-info{
+    line-height: 25px;
+    justify-content: space-evenly;
+}
+.prdct-info div{ 
+ margin: 3px 0px 3px 0px;
+}
+.prdct-info h1{
+font-size: 1em;
+}
+
+
+.orange {
+    background-image: -webkit-linear-gradient(0deg, #ff934b 0%, #ff5e62 100%);
+    text-decoration: none;
+    color: white;
+}
+.btn {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 4px 3px;
+}
+.cart-buy{
+    margin: 5px 2px 8px 2px;
+    /* width: 80%; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
