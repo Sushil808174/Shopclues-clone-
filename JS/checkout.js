@@ -40,7 +40,7 @@ legalinfo.addEventListener("click", (e) => {
 
 
 // let obj = {
-//     "id": 10,
+//     "id": 13,
 //     "name": "Nokia Referbished",
 //     "profile": "https://cdn.shopclues.com/images1/thumbnails/56727/320/320/85444779-56727506-1668506622.jpg",
 //     "price1": "929",
@@ -63,13 +63,11 @@ function renderpage(id, name, img, price, desc) {
     alt=""></div>
 <div class="prdct-info">
 <div>
-    <h3>
+    <h1>
         ${name}
-    </h3>
+    </h1>
 </div>
 <div class="def_flex">
-    <div>branded</div>
-    <div>product id:${id}</div>
 </div>
 <span class="blue">be the first to write a review</span>
 <div class="price">

@@ -36,8 +36,9 @@ p {
     margin: auto;
     /* margin:0%; */
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     margin-bottom: 10px;
 
 }
@@ -208,6 +209,7 @@ p {
     margin: auto;
     padding: 20px;
     color: rgb(83, 80, 80);
+
 }
 
 .desc-op {
@@ -316,4 +318,9 @@ font-size: 1em;
 .prdct-info h1{
     /* word-wrap:inherit; */
     width:80%;
+    font-size: 2em;
+}
+.productsection{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* height: 60vh; */
 }
