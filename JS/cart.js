@@ -57,7 +57,7 @@ else {
     }
 
     function renderpage(data) {
-        mainsection.innerHTML = `${data.map((item, index) => getcard(item.id, item.name, item.price, item.desc, item.profile, item.quantity)).join("")}`
+        mainsection.innerHTML = `${data.map((item, index) => getcard(item.id, item.title, item.price, item.description, item.profile, item.quantity)).join("")}`
         // =================incriment button======================================================
         let inc = document.querySelectorAll(".incriment-btn")
 

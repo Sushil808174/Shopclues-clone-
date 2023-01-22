@@ -1,8 +1,9 @@
-const url = `http://localhost:9090/departments`;
+const url =`http://localhost:3000/Mobile&Laptop`;
 let container = document.getElementById("menu") // body
 // for filter 
 let filter = [];
 let filterData = [];
+
 
 
 // for sorting 
@@ -11,11 +12,9 @@ let low = document.getElementById("l2h")
 let newArrival = document.getElementById("newArrive")
 let popular = document.getElementById("highRate")
 
-
 //for no indexing
 let mainIndex = document.getElementById("indexCount")
-
-//event listener
+// add event listeners 
 window.addEventListener("load", () => {
   fetchData()
 })
@@ -36,7 +35,7 @@ newArrival.addEventListener("click", () => {
 })
 
 popular.addEventListener("click", () => {
-  fetchData(`?_sort=rateing&_order=desc`)
+  fetchData(`?_sort=rating&_order=desc`)
 })
 // **********************************************************************
 //category filter index
@@ -325,7 +324,7 @@ for (let checkbox of RatingOpt) {
       if (filter[i] === "above 4") {
         let printData = []
         filterData.filter((elem) => {
-          if (elem.rateing >= 4) {
+          if (elem.rating >= 4) {
             actualFilterData.push(elem)
             printData.push(elem)
           }
@@ -334,7 +333,7 @@ for (let checkbox of RatingOpt) {
       } else if (filter[i] === "above 3") {
         let printData = []
         filterData.filter((elem) => {
-          if (elem.rateing >= 3) {
+          if (elem.rating >= 3) {
             actualFilterData.push(elem)
             printData.push(elem)
           }
@@ -343,7 +342,7 @@ for (let checkbox of RatingOpt) {
       } else if (filter[i] === "above 2") {
         let printData = []
         filterData.filter((elem) => {
-          if (elem.rateing >= 2) {
+          if (elem.rating >= 2) {
             actualFilterData.push(elem)
             printData.push(elem)
           }
@@ -352,7 +351,7 @@ for (let checkbox of RatingOpt) {
       } else if (filter[i] === "above 1") {
         let printData = []
         filterData.filter((elem) => {
-          if (elem.rateing >= 1) {
+          if (elem.rating >= 1) {
             actualFilterData.push(elem)
             printData.push(elem)
           }
@@ -511,69 +510,69 @@ for (let checkbox of ConditionOpt) {
     }
   })
 }
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+// **********************************
 function fetchData(inputStr = null) {
-  fetch(`${url}${inputStr ? inputStr : ""}`)
-    .then((res) => {
-      return res.json()
-    })
-    .then((data) => {
-      // console.log(data)
-      display(data)
-      filterData = data;
-
-    })
-}
-function display(data) {
-  mainIndex.innerText = data.length;
-  container.innerHTML = `
-    ${data.map((elem) => {
-    return cards(elem.id,elem.image, elem.title, elem.originalprice, elem.discount, elem.rateing, elem.condition, elem.price)
-  }).join("")} 
-    `
-  //   // store into local storage 
-  let clickDiv = document.querySelectorAll(".checkout")
-  let cartData = JSON.parse(localStorage.getItem("checkOutData")) || [];
-  for (let btn of clickDiv) {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault()
-      console.log("ok")
-      data.forEach(element => {
-        if (element.id === e.target.dataset.id) {
-          console.log(e.target.dataset.id)
-          cartData.push(element)
-          localStorage.setItem("checkOutData", JSON.stringify(cartData))
-        }
-      });
-    })
-
+    fetch(`${url}${inputStr ? inputStr : ""}`)
+      .then((res) => {
+        return res.json()
+      })
+      .then((data) => {
+        console.log(data)
+        display(data)
+        filterData = data;
+      })
   }
-}
-function cards(id,image, title, originalprice, discount, rateing, condition, price) {
-  let card = `
-    <a class="checkout" href="#">
-    <div class="card" data-id="${id}">
-    <div class="img-div">
-    <img src=${image} alt="">
-    </div>
-    <div class="detail-div">
-    <p>${title}</p>
-    <div>
-    <h3 class="actual-price">₹${price}</h3>
-    <h3 class="original-price"> ₹${originalprice}</h3>
-    <h3 class="parcentage">${discount}%Off</h3>
-    </div>
-    <p>${fun(condition)}</p>
-    <p>${rateing} <i class="fa-solid fa-star"></i></p>
-    </div>
-    </div>
-    </a>
-    `
-  return card;
-}
-function fun(condition) {
-  if (condition === "Refurbished") {
-    return `<i class="fa-solid fa-screwdriver-wrench"></i> ${condition} `
+  function display(data) {
+    mainIndex.innerText = data.length;
+    container.innerHTML = `
+      ${data.map((elem) => {
+      return cards(elem.id,elem.image, elem.title, elem.originalprice, elem.discount, elem.rating, elem.condition, elem.price)
+    }).join("")} 
+      `
+      let clickDiv = document.querySelectorAll(".checkout")
+    // let cartData = JSON.parse(localStorage.getItem("checkOutData")) || [];
+    
+    for (let btn of clickDiv) {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault()
+        let cartData=[]
+        data.forEach(element => {
+          if (element.id === e.target.dataset.id) {
+            cartData.push(element)
+            localStorage.setItem("checkOutData", JSON.stringify(cartData))
+          }
+        });
+      })
+  
+    }
+    }
+  function cards(id,image, title, originalprice, discount, rating, condition, price) {
+    let card = `
+    
+      <div class="card" >
+      <div class="img-div">
+      <img src=${image} alt="">
+      </div>
+      <div class="detail-div">
+      <p>${title.substring(0,50)}</p>
+      <div>
+      <h3 class="actual-price">₹${price}</h3>
+      <h3 class="original-price"> ₹${originalprice}</h3>
+      <h3 class="parcentage">${discount}%Off</h3>
+      </div>
+      <p>${fun(condition)}</p>
+      <p>${rating} <i class="fa-solid fa-star"></i></p>
+      <P class="checkout" data-id="${id}" >Read More</p>
+      </div>
+      </div>
+      `
+    return card;
   }
-  return "";
-}
+  function fun(condition) {
+    if (condition === "Refurbished") {
+      return `<i class="fa-solid fa-screwdriver-wrench"></i> ${condition} `
+    }
+    return "&nbsp;";
+  }

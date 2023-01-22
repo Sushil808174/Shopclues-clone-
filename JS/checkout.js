@@ -6,7 +6,7 @@ let p = document.createElement("p")
 let disdesc=document.querySelector(".desc-sec")
 let disspec=document.querySelector(".spec-sec")
 // console.log(disdesc)
-console.log(disdesc,disspec)
+// console.log(disdesc,disspec)
 let dislegal=document.querySelector(".legal-sec")
 
 pdesc.style.textDecoration="underline"
@@ -68,14 +68,15 @@ legalinfo.addEventListener("click", (e) => {
 // localStorage.setItem("checkout",JSON.stringify(obj));
 let obj= JSON.parse(localStorage.getItem("checkout"))
 // let obj = x;
+console.log(obj)
 
 let card = document.getElementById("card-wrapper")
 
-renderpage(obj.id, obj.name, obj.profile, obj.price, obj.description);
+renderpage(obj.id, obj.title, obj.profile, obj.price, obj.description);
 let section = document.getElementById("productsection")
 
 function renderpage(id, name, img, price, desc) {
-    console.log(name, id)
+    // console.log(name, id)
     card.innerHTML = `<div class="prdct-img"><img
     src=${img}
     alt=""></div>
@@ -90,7 +91,7 @@ function renderpage(id, name, img, price, desc) {
 <span class="blue">be the first to write a review</span>
 <div class="price">
     <div>
-        <h2>${price}</h4>
+        <h2>₹${price}</h4>
     </div>
     <div class="mrp">MRP: <strike>2900</strike>
     </div>
@@ -102,7 +103,7 @@ function renderpage(id, name, img, price, desc) {
 </div>
 <div class="cart-buy">
     <div class="cartbtn"><a href=""><div class="btn orange">ADD TO CART</div></a></div>
-    <div><a href=""><div class="btn orange">BUY NOW</div></a>
+    <div><a href="Select_Address.html"><div class="btn orange">BUY NOW</div></a>
     </div>
 </div>
 <div class="pinsec">

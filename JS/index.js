@@ -41,7 +41,7 @@ async function fetchandrenderdata(){
 // }
 
 function cartdata(data){
-    let arr=[]
+    // let arr=[]
     // let data=`
     // <a id="ancor" href="#">
     //    <div class="imageblock">
@@ -68,18 +68,18 @@ function cartdata(data){
         imgage.setAttribute("src",element.profile);
         div2.append(imgage)
         let h2=document.createElement("h2");
-        h2.innerHTML=element.name;
+        h2.innerHTML=element.title;
         let span1=document.createElement("span")
         let icon=document.createElement("i");
-        icon.setAttribute("class","fa-solid fa-indian-rupee-sign")
+        // icon.setAttribute("class","fa-solid fa-indian-rupee-sign")
         span1.append(icon)
         
         let span2=document.createElement("span")
         span2.innerHTML=element.price;
         div1.append(div2,h2,span1,span2);
         div1.addEventListener("click",()=>{
-            arr.push(element)
-            localStorage.setItem("landingpage",JSON.stringify(arr))
+            // arr.push(element)
+            localStorage.setItem("checkout",JSON.stringify(element))
         })
         ancortag.append(div1)
 
@@ -102,7 +102,7 @@ async function gadgetsrenderdata(){
 // }
 
 function gadgetcartdata(data){
-    let arr=[]
+    // let arr=[]
     // let data=`
     // <a id="ancor" href="./checkout.html">
     //    <div class="imageblock">
@@ -133,7 +133,7 @@ function gadgetcartdata(data){
         imgage.setAttribute("src",element.profile);
         div2.append(imgage)
         let h2=document.createElement("h2");
-        h2.innerHTML=element.name;
+        h2.innerHTML=element.title;
         let span1=document.createElement("span")
         let icon=document.createElement("i");
         icon.setAttribute("class","fa-solid fa-indian-rupee-sign")
@@ -143,8 +143,8 @@ function gadgetcartdata(data){
         span2.innerHTML=element.price;
         div1.append(div2,h2,span1,span2);
         div1.addEventListener("click",()=>{
-            arr.push(element)
-            localStorage.setItem("landingpage",JSON.stringify(arr))
+            // arr.push(element)
+            localStorage.setItem("checkout",JSON.stringify(element))
         })
         ancortag.append(div1)
 
@@ -161,7 +161,7 @@ async function forbrandstore(){
 }
 
 function storebrandData(data){
-    let arr=[];
+    // let arr=[];
 
     data.forEach(element => {
         let ancortag=document.createElement("a");
@@ -176,7 +176,7 @@ function storebrandData(data){
         imgage.setAttribute("src",element.profile);
         div2.append(imgage)
         let h2=document.createElement("h2");
-        h2.innerHTML=element.name;
+        h2.innerHTML=element.title;
         let span1=document.createElement("span")
         let icon=document.createElement("i");
         icon.setAttribute("class","fa-solid fa-indian-rupee-sign")
@@ -186,8 +186,8 @@ function storebrandData(data){
         span2.innerHTML=element.price1;
         div1.append(div2,h2,span1,span2);
         div1.addEventListener("click",()=>{
-            arr.push(element)
-            localStorage.setItem("landingpage",JSON.stringify(arr))
+            // arr.push(element)
+            localStorage.setItem("checkout",JSON.stringify(element))
         })
         ancortag.append(div1)
 

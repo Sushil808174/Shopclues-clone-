@@ -5,117 +5,518 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="./CSS/product.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Product</title>
 </head>
 
 <body>
-    <div id="main">
-        <!-- all functions -->
-        <div id="options">
+    <div class="body">
+        <div class="head">
             <div>
-                <h3>Category Filters</h3>
-                <details>
-                    <summary id="mobile-tablets">Mobiles & Tablets <span id="mobile-tablet-ind"></span></summary>
-                    <details>
-                        <summary id="refurbished-mobile">Refurbished Mobiles <span id="Refurbished-Mobiles-ind"></span>
-                        </summary>
-                    </details>
-                    <details>
-                        <summary id="tablets">Unboxed Tablets <span id="Unboxed-Tablets-ind"></span></summary>
-                    </details>
-                </details>
-                <details>
-                    <summary id="laptop">Laptops <span id="laptop-ind"></span></summary>
-                    <details>
-                        <summary id="newlaptop"> New Laptops <span id="newlaptop-ind"></span></summary>
-                    </details>
-                    <details>
-                        <summary id="refurbished-laptop">Refurbished Laptops <span id="refurbished-laptop-ind"></span>
-                        </summary>
-                    </details>
-                </details>
-                <!-- <ul>
+                <!-- contact start -->
+                <div id="head_contancts">
+                    <ul>
+                        <li class="sells">
+                            Sell With us
+                        </li>
+                        <div class="line">|</div>
+                        <li class="sells">Call Us </li>
+                        <div class="line">|</div>
+                        <li class="sells">Download App: </li>
+                        <li class="sells">
+                            <a href="#"><img class="os"
+                                    src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/000000/external-android-social-media-tanah-basah-basic-outline-tanah-basah.png" /></a>
+                            <a href="#"><img style="height: 15px;"
+                                    src="https://img.icons8.com/material-sharp/24/000000/mac-os.png" /></a>
+                            <a href="#"><img style="height: 15px;"
+                                    src="https://img.icons8.com/ios-glyphs/30/000000/windows-client.png" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- contact end -->
+                <!-- search line start -->
+                <div id="head_searchLine">
+                    <!-- shopclues img start -->
+                    <div id="logo">
+                        <a href="index.html">
+                            <div class="image"><img src="./image/shopeasy-logo.png" alt=""></div>
+                        </a>
+                    </div>
+                    <!-- shopclues img end -->
+                    <!-- search box start -->
+                    <div id="seach">
+                        <form>
+                            <input id="seachBox" type="text" name="search" placeholder="What's on your mind?">
+                        </form>
+                        <button id="searhBtn">search</button>
+                    </div>
+                    <!-- search box end -->
+                    <!-- head option start -->
+                    <div id="head_options">
+                        <div id="Location">
+                            <div>
+                                <div>Share</div>
+                                <a id="loc_a" href="#">
+                                    Location
+                                </a>
+                            </div>
+                            <div><i id="loc_icon" style="color: #36bccd ;" class="fa-solid fa-location-dot"></i></div>
+                        </div>
+                        <div class="notification">
+                            <a href="#"> <span id="not_icon" style="color: #36bccd;" class="material-symbols-outlined">
+                                    notifications
+                                </span></a>
+                        </div>
+                        <div id="fav">
+                            <a href="#"> <span id="fav_icon" style=" color: #36bccd;" class="material-symbols-outlined">
+                                    favorite
+                                </span></a>
+
+                        </div>
+                        <div id="cart">
+                            <a href="cart.html"> <span id="cart_icon" style=" color: #36bccd;"
+                                    class="material-symbols-outlined">
+                                    shopping_cart
+                                </span></a>
+
+                        </div>
+                        <!-- <div id="signin_div">
+                        <a id="signIn" href="#">
+                            <h3>Sign in</h3>
+                        </a>
+                    </div> -->
+                        <!-- end of search line -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- nav start -->
+            <nav class="navUpper">
+                <div class="wrapper">
+                    <ul class="nav-links">
+                        <img id="madeindia" src="https://images.shopclues.com/images/ui/madeinindia.png" alt="">
+                        <li class="dropdown">
+                            <a class="nav_li" href="#">MOBILE & MORE</a>
+                            <div class="dropdownMenu">
+                                <div>
+                                    <h4><a class="htag" href="#"
+                                            onclick='loadHtml("appendProduct","product.html")'>Smart Phones</a></h4>
+                                    <br>
+                                    <p><a class="drop_text" href="#">I KALL</a></p>
+                                    <p><a class="drop_text" href="#">Mi</a></p>
+                                    <p> <a class="drop_text" href="#">Realme</a></p>
+                                    <p><a class="drop_text" href="#">Samsung</a></p>
+                                    <p><a class="drop_text" href="#">Vivo</a></p>
+                                    <p><a class="drop_text" href="#">Oppo</a></p>
+                                    <p> <a class="drop_text" href="#">Apple</a></p>
+                                    <p> <a class="drop_text" href="#">Tecno</a></p>
+                                    <p> <a class="drop_text" href="#">Infinix</a></p>
+                                    <p> <a class="drop_text" href="#">Microsoft</a></p>
+                                    <br>
+                                    <h4><a class="htag" href="#">Refurnished smartphones</a></h4>
+                                    <br>
+                                    <h4><a class="htag" href="#">Refurnished Features Phones</a></h4>
+                                </div>
+                                <div>
+                                    <h4><a class="htag" href="#">Feature Phones</a></h4>
+                                    <br>
+                                    <p><a class="drop_text" href="#">micromax</a></p>
+                                    <p><a class="drop_text" href="#">IkALL</a></p>
+                                    <p> <a class="drop_text" href="#">Nokia</a></p>
+                                    <p><a class="drop_text" href="#">MTR</a></p>
+                                    <p><a class="drop_text" href="#">Heemax</a></p>
+                                    <p><a class="drop_text" href="#">Karbonn</a></p>
+                                    <p> <a class="drop_text" href="#">Kechaoda</a></p>
+                                    <p> <a class="drop_text" href="#">Gfive</a></p>
+                                    <p> <a class="drop_text" href="#">Blackbear</a></p>
+                                    <p> <a class="drop_text" href="#">Sumsung</a></p>
+                                    <br>
+                                    <h4><a class="htag" href="#">Gaming console</a></h4>
+                                    <br>
+                                    <br>
+                                    <p> <a class="drop_text" href="#">Gaming tools</a></p>
+                                    <p> <a class="drop_text" href="#">Gaming accessories</a></p>
+
+                                </div>
+                                <div>
+                                    <h4><a class="htag" href="#">Best Accessories</a></h4>
+                                    <br>
+                                    <p><a class="drop_text" href="#">Top rated</a></p>
+                                    <p><a class="drop_text" href="#">Combos</a></p>
+                                    <p> <a class="drop_text" href="#">PowerBanks</a></p>
+                                    <p><a class="drop_text" href="#">Cases</a></p>
+                                    <p><a class="drop_text" href="#">Holders</a></p>
+                                    <p><a class="drop_text" href="#">Cable</a></p>
+                                    <p> <a class="drop_text" href="#">Adapter</a></p>
+                                    <p> <a class="drop_text" href="#">Chargers</a></p>
+                                    <p> <a class="drop_text" href="#">SelfieSticks</a></p>
+                                    <br>
+                                    <h4><a class="htag" href="#">Gaming console</a></h4>
+                                    <br>
+                                    <p> <a class="drop_text" href="#">MemoryCard</a></p>
+                                    <p> <a class="drop_text" href="#">PenDrive</a></p>
+
+                                </div>
+                                <div>
+                                    <h4><a class="htag" href="#">Brand Accessories</a></h4>
+                                    <br>
+                                    <p><a class="drop_text" href="#">Titan</a></p>
+                                    <p><a class="drop_text" href="#">Toshiba</a></p>
+                                    <p> <a class="drop_text" href="#">Sandisk</a></p>
+                                    <p><a class="drop_text" href="#">Philips</a></p>
+                                    <p><a class="drop_text" href="#">Portonics</a></p>
+                                    <p><a class="drop_text" href="#">Zenronics</a></p>
+                                    <p> <a class="drop_text" href="#">Boat</a></p>
+                                    <p> <a class="drop_text" href="#">Syska</a></p>
+                                    <p> <a class="drop_text" href="#">JBL</a></p>
+                                    <br>
+                                    <h4><a class="htag" href="#">Audio</a></h4>
+                                    <br>
+                                    <p> <a class="drop_text" href="#">headsets</a></p>
+                                    <p> <a class="drop_text" href="#">bluetoothSets</a></p>
+
+                                </div>
+                                <div>
+                                    <h4><a class="htag" href="#">Laptop</a></h4>
+                                    <br>
+                                    <p><a class="drop_text" href="#">Hp</a></p>
+                                    <p><a class="drop_text" href="#">Lenovo</a></p>
+                                    <p> <a class="drop_text" href="#">Asus</a></p>
+                                    <p><a class="drop_text" href="#">Acer</a></p>
+                                    <p><a class="drop_text" href="#">Coconics</a></p>
+                                    <br>
+                                    <h4><a class="htag" href="#">Refurbished</a></h4>
+                                    <br>
+                                    <h4><a class="htag" href="#">Accessories</a></h4>
+                                    <br>
+                                    <p> <a class="drop_text" href="#">Mouse</a></p>
+                                    <p> <a class="drop_text" href="#">Keyboard</a></p>
+                                    <p> <a class="drop_text" href="#">lappy-bag</a></p>
+                                    <p> <a class="drop_text" href="#">Skins</a></p>
+                                    <br>
+                                    <h4><a class="htag" href="#">Printers</a></h4>
+                                    <br>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a class="nav_li" href="#">MEN</a></li>
+                        <li><a class="nav_li" href="#">WOMEN</a></li>
+                        <li><a class="nav_li" href="#">HOME & KITCHEN</a></li>
+                        <li><a class="nav_li" href="#">APPLIANCES</a></li>
+                        <li><a class="nav_li" href="#">SPORTS & MORE</a></li>
+                        <li><a class="nav_li" href="#">ESSENTIALS </a></li>
+                        <li><a class="nav_li" href="#">OFFERS</a></li>
+                        <li><a class="nav_li" href="#">GLOBAL SHOPING</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="LowNav">
+            <div class="wrap">
+                <ul class="Lvan_opt">
+                    <li><a class="div_li" href="#">Time Sales</a></li>
+                    <li><a class="div_li" href="#">Flu Care</a></li>
+                    <li><a class="div_li" href="#">Food & Beveragee</a></li>
+                    <li><a class="div_li" href="#">Personal Hygiene</a></li>
+                    <li><a class="div_li" href="#">Home Cleaning</a></li>
+                    <li><a class="div_li" href="#">Nutrition & Supplements</a></li>
+                    <li><a class="div_li" href="#">Kitchen & Dining </a></li>
+                    <li><a class="div_li" href="#">Refurbished Mobiles</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div id="main">
+                <!-- all functions -->
+                <div id="options">
+                    <div>
+                        <h3>Category Filters</h3>
+                        <details>
+                            <summary id="mobile-tablets">Mobiles & Tablets <span id="mobile-tablet-ind"></span>
+                            </summary>
+                            <details>
+                                <summary id="refurbished-mobile">Refurbished Mobiles <span
+                                        id="Refurbished-Mobiles-ind"></span>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary id="tablets">Unboxed Tablets <span id="Unboxed-Tablets-ind"></span></summary>
+                            </details>
+                        </details>
+                        <details>
+                            <summary id="laptop">Laptops <span id="laptop-ind"></span></summary>
+                            <details>
+                                <summary id="newlaptop"> New Laptops <span id="newlaptop-ind"></span></summary>
+                            </details>
+                            <details>
+                                <summary id="refurbished-laptop">Refurbished Laptops <span
+                                        id="refurbished-laptop-ind"></span>
+                                </summary>
+                            </details>
+                        </details>
+                        <!-- <ul>
                     <li><i class="fa-solid fa-chevron-right"></i></li>
                 </ul> -->
-            </div>
-            <div class="name">
-                <h3 class="h3">Discount <a href="" id="discount-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="discounts" value="Upto 20%">Upto 20% <span
-                            id="Upto-20%-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="discounts" value="21-40%">21 - 40% <span
-                            id="21-40%-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="discounts" value="41-60%">41 - 60% <span
-                            id="41-60%-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="discounts" value="61-80%">61 - 80% <span
-                            id="61-80%-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="discounts" value="More than 80%">Upto 80% <span
-                            id="More-than-80%-ind"></span></label></li>
-            </div>
-            <hr>
-            <div>
-                <h3 class="h3">Price <a href="" id="price-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Prices" value="501-1000">501 - 1000 <span
-                            id="501-1000-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Prices" value="1001-2500">1001 - 2500 <span
-                            id="1001-2500-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Prices" value="2501-5000">2501-5000 <span
-                            id="2501-5000-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Prices" value="Upto 5000">Above 5000 <span
-                            id="Above-5000-ind"></span></label></li>
-            </div>
-            <hr>
-            <div>
-                <h3 class="h3">Product Rating <a href="" id="Rating-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Ratings" value="above 4">4 & above <span
-                            id="above-4-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Ratings" value="above 3">3 & above <span
-                            id="above-3-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Ratings" value="above 2">2 & above <span
-                            id="above-2-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Ratings" value="above 1">1 & above <span
-                            id="above-1-ind"></span></label></li>
-            </div>
-            <hr>
-            <div>
-                <h3 class="h3">Brand <a href="" id="Brand-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Brands" value="APPLE">APPLE<span id="APPLE-ind"></span></label>
-                </li>
-                <li> <label><input type="checkbox" class="Brands" value="SAMSUNG">SAMSUNG <span
-                            id="SAMSUNG-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Brands" value="LENOVO">LENOVO<span
-                            id="LENOVO-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Brands" value="HP">HP <span id="HP-ind"></span></label></li>
-                <li> <label><input type="checkbox" class="Brands" value="NOKIA">NOKIA<span
-                            id="NOKIA-ind"></span></label></li>
-            </div>
-            <hr>
-            <div>
-                <h3 class="h3">Item Condition <a href="" id="Condition-clear">Clear All</a></h3>
-                <li><label><input type="checkbox" class="Conditions" value="New">New <span id="New-ind"></span></label>
-                </li>
-                <li> <label><input type="checkbox" class="Conditions" value="Refurbished">Refurbished - Expert Certified
-                        <span id="Refurbished-ind"></span></label></li>
-            </div>
-        </div>
-        <!-- product data  -->
-        <div id="products">
-            <h2>Refurb Store</h2>
-            <div id="sorting">
-                <p><span id="indexCount"></span> Products Founds</p>
-                <p>Sort By: <span id="h2l">High Price</span> | <span id="l2h">Low Price</span> | <span
-                        id="highRate">Popular Products</span> | <span id="newArrive">New
-                        Arrivals</span></p>
-            </div>
-            <div id="menu">
-                <!-- append -->
+                    </div>
+                    <div>
+                        <h3 class="h3">Discount <a href="" id="discount-clear">Clear All</a></h3>
+                        <li><label><input type="checkbox" class="discounts" value="Upto 20%">Upto 20% <span
+                                    id="Upto-20%-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="discounts" value="21-40%">21 - 40% <span
+                                    id="21-40%-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="discounts" value="41-60%">41 - 60% <span
+                                    id="41-60%-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="discounts" value="61-80%">61 - 80% <span
+                                    id="61-80%-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="discounts" value="More than 80%">Upto 80% <span
+                                    id="More-than-80%-ind"></span></label></li>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="h3">Price <a href="" id="price-clear">Clear All</a></h3>
+                        <li><label><input type="checkbox" class="Prices" value="501-1000">501 - 1000 <span
+                                    id="501-1000-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="Prices" value="1001-2500">1001 - 2500 <span
+                                    id="1001-2500-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="Prices" value="2501-5000">2501-5000 <span
+                                    id="2501-5000-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="Prices" value="Upto 5000">Above 5000 <span
+                                    id="Above-5000-ind"></span></label></li>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="h3">Product Rating <a href="" id="Rating-clear">Clear All</a></h3>
+                        <li><label><input type="checkbox" class="Ratings" value="above 4">4 & above <span
+                                    id="above-4-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="Ratings" value="above 3">3 & above <span
+                                    id="above-3-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="Ratings" value="above 2">2 & above <span
+                                    id="above-2-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="Ratings" value="above 1">1 & above <span
+                                    id="above-1-ind"></span></label></li>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="h3">Brand <a href="" id="Brand-clear">Clear All</a></h3>
+                        <li><label><input type="checkbox" class="Brands" value="APPLE">APPLE<span
+                                    id="APPLE-ind"></span></label>
+                        </li>
+                        <li> <label><input type="checkbox" class="Brands" value="SAMSUNG">SAMSUNG <span
+                                    id="SAMSUNG-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="Brands" value="LENOVO">LENOVO<span
+                                    id="LENOVO-ind"></span></label></li>
+                        <li> <label><input type="checkbox" class="Brands" value="HP">HP <span
+                                    id="HP-ind"></span></label>
+                        </li>
+                        <li> <label><input type="checkbox" class="Brands" value="NOKIA">NOKIA<span
+                                    id="NOKIA-ind"></span></label></li>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="h3">Item Condition <a href="" id="Condition-clear">Clear All</a></h3>
+                        <li><label><input type="checkbox" class="Conditions" value="New">New <span
+                                    id="New-ind"></span></label>
+                        </li>
+                        <li> <label><input type="checkbox" class="Conditions" value="Refurbished">Refurbished - Expert
+                                Certified
+                                <span id="Refurbished-ind"></span></label></li>
+                    </div>
+                </div>
+                <!-- product data  -->
+                <div id="products">
+                    <h2>Refurb Store</h2>
+                    <div id="sorting">
+                        <p><span id="indexCount"></span> Products Founds</p>
+                        <p>Sort By: <span id="h2l">High Price</span> | <span id="l2h">Low Price</span> | <span
+                                id="highRate">Popular Products</span> | <span id="newArrive">New
+                                Arrivals</span></p>
+                    </div>
+                    <hr>
+                    <div id="menu">
+                        <!-- append -->
 
+                    </div>
+                </div>
             </div>
+
+
+            <!-- FOOTER FOOTER FOOTER  -->
+            <footer>
+                <div class="band">
+                    <h1>Band of Trust</h1>
+                    <div id="protect">
+                        <div class="bandicon">
+                            <span><i class="fa-solid fa-shield-halved"></i></span>
+                            <p>Great Selection</p>
+                        </div>
+                        <div class="bandicon">
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i></span>
+                            <p>Low Price</p>
+                        </div>
+                        <div class="bandicon">
+                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            <p>Speedy Delivery</p>
+                        </div>
+                    </div>
+                </div>
+                <hr id="hr">
+
+                <!-- for footer links -->
+                <div class="links">
+                    <div class="linksfour">
+                        <div>
+                            <h2>Shopper Central</h2>
+                            <a href="#">Easy Returns & Replacement</a>
+                            <a href="#">Our Policies</a>
+                            <a href="#">Sign In/Register</a>
+                            <a href="#">CluesBucks</a>
+                            <a href="#">Payment Options</a>
+                            <a href="#">ShopClues Bazaar Surety</a>
+                            <a href="#">FAQs (Help)</a>
+                            <a href="#">Service Centers</a>
+                            <a href="#">User Agreement</a>
+                        </div>
+                    </div>
+                    <div class="linksfour">
+                        <div>
+                            <h2>Shopper Central</h2>
+                            <a href="#">Easy Returns & Replacement</a>
+                            <a href="#">Our Policies</a>
+                            <a href="#">Sign In/Register</a>
+                            <a href="#">CluesBucks</a>
+                            <a href="#">Payment Options</a>
+                            <a href="#">ShopClues Bazaar Surety</a>
+                            <a href="#">FAQs (Help)</a>
+                            <a href="#">Service Centers</a>
+                            <a href="#">User Agreement</a>
+                        </div>
+                    </div>
+                    <div class="linksfour">
+                        <div>
+                            <h2>Shopper Central</h2>
+                            <a href="#">Easy Returns & Replacement</a>
+                            <a href="#">Our Policies</a>
+                            <a href="#">Sign In/Register</a>
+                            <a href="#">CluesBucks</a>
+                            <a href="#">Payment Options</a>
+                            <a href="#">ShopClues Bazaar Surety</a>
+                            <a href="#">FAQs (Help)</a>
+                            <a href="#">Service Centers</a>
+                            <a href="#">User Agreement</a>
+                        </div>
+                    </div>
+                    <div class="linksfour">
+                        <div>
+                            <h2>Shopper Central</h2>
+                            <a href="#">Easy Returns & Replacement</a>
+                            <a href="#">Our Policies</a>
+                            <a href="#">Sign In/Register</a>
+                            <a href="#">CluesBucks</a>
+                            <a href="#">Payment Options</a>
+                            <a href="#">ShopClues Bazaar Surety</a>
+                            <a href="#">FAQs (Help)</a>
+                            <a href="#">Service Centers</a>
+                            <a href="#">User Agreement</a>
+                        </div>
+                    </div>
+                </div>
+                <hr id="hr">
+
+                <!-- for payment -->
+                <div class="paymentfooter">
+                    <div class="paymenttwo">
+                        <p>Keep In Touch</p>
+                        <div>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-pinterest-p"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-google-plus-g"></i></span>
+                            <span><i class="fa-brands fa-youtube"></i></span>
+                            <span><i class="fa-brands fa-linkedin-in"></i></span>
+                        </div>
+                    </div>
+                    <div class="paymenttwo">
+                        <p>100% Secure and Trusted Payment</p>
+                        <div>
+                            <img src="https://images.shopclues.com/images/ui/pgateway_dkt@2x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <hr id="hr">
+
+                <!-- footer leading category -->
+                <div class="footercategory">
+                    <h1>Our Leading Categories</h1>
+                    <div>
+
+                        <span><strong>Mobile & Tablets: </strong>Android Phones| Smartphones| Feature Phones| Unboxed
+                            Phones| Refurbished Phones| Tablets| CDMA Phones| Value Added Services| Sell Old/ Used
+                            Mobiles</span>
+                    </div>
+                    <div>
+                        <span> <strong>Computers:</strong> Laptops| Printers| Routers| Ink & Toner Cartridges| Monitors|
+                            Video Games| Unboxed & Refurbished Laptops| Assembled Desktops| Data Cards</span>
+                    </div>
+                    <div>
+                        <span><strong> TV, Audio & Large Appliances:</strong>TVs & DTH| Home Theatre Systems| Hidden
+                            Cameras & CCTVs| Refrigerators| Washing Machines| Air Conditioners| Cameras| Speakers</span>
+                    </div>
+                    <div>
+                        <span><strong> Mobile & Laptop Accessories:</strong>Headphones| Power Banks| Backpacks| Mobile
+                            Cases & Covers| Pen Drives| External Hard Disks| Mouse| Smart Watches & Fitness Bands|
+                            MicroSD Cards</span>
+                    </div>
+                    <div>
+                        <span><strong> Appliances:</strong>Trimmers| Hair Dryers| Emergency Lights| Water Purifiers|
+                            Electric Kettles| Hair Straighteners| Induction Cooktops| Sewing Machines| Geysers</span>
+                    </div>
+                    <div>
+                        <span><strong> Home & Kitchen:</strong>Bedsheets| Hardware & Sanitaryware| Towels, Bath Linens|
+                            Furniture| Cookware| Kitchen Tools| Home Cleaning Utilities| Doormats| Curtains| Gardening
+                            Essentials</span>
+                    </div>
+                    <div>
+                        <span><strong> Fashion:</strong>Women's Clothing| Men's Clothing| Women's Ethnic Wear| Men's
+                            Fashion Accessories| Sports Wear| Western Wear| Handbags & Wallets, Clutches| Handbags|
+                            Sarees| T-Shirts| Lingerie & Sleep Wear</span>
+                    </div>
+                    <div>
+                        <span><strong> Footwear:</strong>Men's Sports Shoes| Men's Slippers| Casual Shoes| Sandals &
+                            Floaters| Formal Shoes| Women Flats| Ballerinas| Loafers| Boots| Shoe Care &
+                            Accessories</span>
+                    </div>
+                    <div>
+                        <span><strong> Travel & Luggage:</strong>Duffle Bags| Laptop Bags| Travel Pouches| Backpacks|
+                            Suitcases & Trolleys| Travel Accessories| Gym Bags| Messenger Bags| School Bags| Safety
+                            Locks</span>
+                    </div>
+                    <div>
+                        <span><strong>Jewelry & Watches:</strong> Coins & Bars| Men's Watches| Women's Watches|
+                            Necklaces Sets| Fashion Jewelry| Pendants and Lockets| Earrings| Rings| Jewelry Boxes| Kid's
+                            Watches</span>
+                    </div>
+                    <div>
+                        <span><strong>Automotive:</strong> Bike Accessories / Tools| Car Cleaning Aids| Helmets| Bike
+                            Body Covers| Car Accessories / Tools| Riding Gloves| Car Perfumes| Car Scratch Removers| Car
+                            Audio | Video| Bike Alarms</span>
+                    </div>
+                    <h1>Popular on ShopClues Bazaar</h1>
+                    <div id="popular">
+                        Offers & Coupons| Couple Watches| Gas Stoves| Air Coolers| Air Purifiers| Headphones / Mic /
+                        Headset| Pressure Cookers| Sandwich Makers| Air Friers / Deep Friers| Irons| LED TV| Men
+                        Jackets| Educational Toys| Stabilizers| Heaters| Car Audio Systems| Photo Frames| Men's Shoes|
+                        Decorative Lights| Rain Wear| Bedsheets| Top Brands
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    <div></div>
 </body>
 <script src="https://kit.fontawesome.com/f96245ac11.js" crossorigin="anonymous"></script>
-<script src="product.js"></script>
+<script src="./JS/product.js"></script>
 
 </html>
