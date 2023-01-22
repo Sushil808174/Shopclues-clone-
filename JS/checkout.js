@@ -3,39 +3,57 @@ let pdesc=document.getElementById("prdct-desc")
 let pspec=document.getElementById("prdct-spec")
 let linfo=document.getElementById("legal-info")
 let p = document.createElement("p")
+let disdesc=document.querySelector(".desc-sec")
+let disspec=document.querySelector(".spec-sec")
+// console.log(disdesc)
+console.log(disdesc,disspec)
+let dislegal=document.querySelector(".legal-sec")
+
 pdesc.style.textDecoration="underline"
 
-document.getElementById("prdct-spec").addEventListener("click", (e) => {
+document.getElementById("prdct-spec").addEventListener("click",(e) => {
     // console.log("working")
+    disspec.style.display="block"
+    disdesc.style.display="none"
+    dislegal.style.display="none"
+   
+    let display=document.querySelector(".desc-sec")
     pdesc.style.textDecoration="none"
     pspec.style.textDecoration="underline"
     linfo.style.textDecoration="none"
-    description.innerHTML = ""
+    // description.innerHTML = ""
     e.preventDefault()
-    description.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
-    description.append(p)
+    // description.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
+    // description.append(p)
 })
 
 document.getElementById("prdct-desc").addEventListener("click", (e) => {
+    e.preventDefault();
     // console.log("working")
+    disspec.style.display="none"
+    disdesc.style.display="block"
+    dislegal.style.display="none"
 
     pdesc.style.textDecoration="underline"
     pspec.style.textDecoration="none"
     linfo.style.textDecoration="none"
-    description.innerHTML = ""
-    e.preventDefault();
-    p.innerText = `tushar Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
+    // description.innerHTML = ""
+    // p.innerText = `tushar Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
     description.append(p)
 })
 let legalinfo = document.getElementById("legal-info")
 legalinfo.addEventListener("click", (e) => {
-    description.innerHTML = ""
+    // description.innerHTML = ""
+    disspec.style.display="none"
+    disdesc.style.display="none"
+    dislegal.style.display="block"
+
     pdesc.style.textDecoration="none"
     pspec.style.textDecoration="none"
     linfo.style.textDecoration="underline"
     e.preventDefault()
-    p.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
-    description.append(p)
+    // p.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam iste at impedit quaerat rem nobis nihil? Adipisci quis nisi voluptate autem cupiditate, iusto obcaecati quod cum libero minus dolor, neque quae aliquam ipsum pariatur velit tempore non voluptatibus consequuntur esse amet! Laudantium quasi maiores ab porro a itaque repellat atque. Doloremque vero aliquid dicta! Corrupti deserunt reprehenderit repudiandae sapiente in dignissimos voluptatem voluptate harum error exercitationem alias, consequatur rerum asperiores vitae illo. Ipsum beatae nisi nobis modi? Ad, perferendis animi at, possimus a consequatur similique ratione provident voluptatibus corrupti exercitationem maiores, dolore ex recusandae voluptatum debitis qui? Ea, rerum.`
+    // description.append(p)
 })
 
 
