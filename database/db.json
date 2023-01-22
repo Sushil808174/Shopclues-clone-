@@ -1,0 +1,938 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "title": "Adarsh Jondhale",
+      "email": "adarshjondhale@example.in",
+      "profile": "/images/homepage/152689876-115246212-1659944528.jpg",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "title": "Adarsh Jondhale",
+      "email": "adarshjondhale@example.in",
+      "profile": "https://images.pexels.com/photos/734428/pexels-photo-734428.jpeg?cs=srgb&dl=pexels-reynaldo-brigworkz-brigantty-734428.jpg&fm=jpg",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "id": 3,
+      "title": "Adarsh Jondhale",
+      "email": "adarshjondhale@example.in",
+      "profile": "https://images.pexels.com/photos/734428/pexels-photo-734428.jpeg?cs=srgb&dl=pexels-reynaldo-brigworkz-brigantty-734428.jpg&fm=jpg",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "id": 4,
+      "title": "Adarsh Jondhale",
+      "email": "adarshjondhale@example.in",
+      "profile": "",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "title": "prashant",
+      "email": "adarshjondhale@example.in",
+      "profile": "",
+      "status": "Active",
+      "role": "Admin",
+      "id": 5
+    }
+  ],
+  "Homepage": [
+    {
+      "id": 1,
+      "title": "Venerate Headphone",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/115246/320/320/152689876-115246212-1659944528.jpg",
+      "price1": "269",
+      "price": 269,
+      "description": "Venerate Headphone Stand Headset Holder Earphone Stand with Aluminum Supporting Bar (Black)"
+    },
+    {
+      "id": 2,
+      "title": "MTR MT310",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/81476/320/320/135627858-81476269-1665754103.jpg",
+      "price1": "749",
+      "price": 749,
+      "description": "MTR MT310 Dual Sim 1.8 inches (4.57 cm) Display Feature Phone"
+    },
+    {
+      "id": 3,
+      "title": "Premium Quality Nylon",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/71795/200/200/128902274-71795769-1653057803.jpg",
+      "price1": "250",
+      "price": 250,
+      "description": "Premium Quality Nylon Braded Aux Cable 1.2 Meter 3.5Mm Male To Male Stereo Audio Cable (Assorted Color)"
+    },
+    {
+      "id": 4,
+      "title": "Dizom Dz-104",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/115737/200/200/152853766-115737455-1637323013.jpg",
+      "price1": "389",
+      "price": 389,
+      "description": "Dizom Dz-104 Hip-Hop Series With Extra Bass Neckband Bluetooth Headset (Black, In The Ear)"
+    },
+    {
+      "id": 5,
+      "title": "ZEB-UCC100 2.0 ",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/115044/200/200/152634665-115044372-1629705035.jpg",
+      "price1": "139",
+      "price": 139,
+      "description": "ZEB-UCC100 2.0 Data Charging Cable Charger for All Android Mobile Phones"
+    },
+    {
+      "id": 6,
+      "title": "USB Type-C ",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/95123/200/200/142672875-95123237-1645016499.jpg",
+      "price1": "302",
+      "price": 302,
+      "description": "USB Type-C to Type-A 3.0 Male Nylon Braided Cable Fast Charging (White)"
+    },
+    {
+      "id": 7,
+      "title": "i7S TWS",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/99370/320/320/145508146-99370521-1668508420.jpg",
+      "price1": "299",
+      "price": 299,
+      "description": "i7S TWS Twins Wireless In the Ear Earphone"
+    },
+    {
+      "id": 8,
+      "title": "HBS-730",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/95357/320/320/142826933-95357827-1664550819.jpg",
+      "price1": "299",
+      "price": 299,
+      "description": "HBS-730 In the Ear Bluetooth Neckband Headphone With MIC (Black)"
+    },
+    {
+      "id": 9,
+      "title": "Innotek Mini K1",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/112883/200/200/151860087-112883707-1664649308.jpg",
+      "price1": "169",
+      "price": 169,
+      "description": "Innotek Mini K1 Universal Wireless Noise Cancelling Bluetooth Earpiece Smart Call Answering for All Smartphones"
+    },
+    {
+      "id": 10,
+      "title": "Refurbished Nokia 1100",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/98012/320/320/144475154-98012302-1664648956.jpg",
+      "price1": "999",
+      "price": 999,
+      "description": "Refurbished Nokia 1100 Single Sim Feature Phones (Assorted Color)"
+    },
+    {
+      "id": 11,
+      "title": "Refurbished Nokia 1100",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/98012/320/320/144475154-98012302-1664648956.jpg",
+      "price1": "999",
+      "price": 999,
+      "description": "Refurbished Nokia 1100 Single Sim Feature Phones (Assorted Color)"
+    },
+    {
+      "id": 11,
+      "title": "Cooking Essential",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/105589/280/1/149278210-105589660-1585251645.jpg",
+      "price": "Starting ar Rs.49"
+    },
+    {
+      "id": 12,
+      "title": "Skin,Hair & Body",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/105589/320/1/149278289-105589933-1585251885.jpg",
+      "price": "Starting at Rs.99"
+    },
+    {
+      "id": 13,
+      "title": "Kitchen Essentials",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/104441/280/1/148788228-104441348-1578472379.jpg",
+      "price1": "Starting at Rs.49"
+    },
+    {
+      "id": 14,
+      "title": "Masks,Sanitizers & More",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/105520/280/1/149254102-105520442-1584863770.jpg",
+      "price1": "Starting at Rs.49"
+    },
+    {
+      "id": 15,
+      "title": "Cleaning & Dusting Supplies",
+      "profile": "https://cdn.shopclues.com/images/thumbnails/42332/280/1/966030079473255231PUTPaCZnL146606056314665883171470319810.jpg",
+      "price1": "Starting at Rs.109"
+    },
+    {
+      "id": 16,
+      "title": "Laundry Detergents",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/105577/320/320/149274414-105577366-1585235325.jpg",
+      "price1": "Starting at Rs.49"
+    },
+    {
+      "id": 17,
+      "title": "D20 Fitness",
+      "profile": "https://gd.image-gmkt.com/li/066/347/1706347066.g_800-w-st_g.jpg",
+      "price1": "499",
+      "price": 499,
+      "description": "D20 Fitness Smartwatch (Black Strap Free Size)"
+    },
+    {
+      "id": 18,
+      "title": "Trueware Wave 950",
+      "profile": "https://gd.image-gmkt.com/li/397/137/1729137397.g_800-w-st_g.jpg",
+      "price1": "239",
+      "price": 239,
+      "description": "Trueware Wave 950 Plastic Insulated Cold Water Bottle"
+    },
+    {
+      "id": 19,
+      "title": "Women's Ethnic Wear",
+      "profile": "https://cdn.shopclues.com/images/thumbnails/88912/320/320/131487154GOLDENPEACOCK1512550255.jpg",
+      "price1": "Upto 80% Off"
+    },
+    {
+      "id": 20,
+      "title": "Mens's Ethnic Wear",
+      "profile": "https://cdn.shopclues.com/images/detailed/41945/HandloomPinkKurta1_1469600960.jpg",
+      "price1": "Min 40% Off"
+    },
+    {
+      "id": 21,
+      "title": "Ethnic FootWear",
+      "profile": "https://cdn.shopclues.com/images/detailed/85345/129033198_Untitled1copy_1506507048.jpg",
+      "price1": "Upto 80% Off"
+    },
+    {
+      "id": 22,
+      "title": "Wooden Temple",
+      "profile": "https://cdn.shopclues.com/images/thumbnails/48680/320/320/61SUwF0UAAL1480795166.jpg",
+      "price1": "Upto 60% Off"
+    },
+    {
+      "id": 23,
+      "title": "Pooja Essentials",
+      "profile": "https://cdn.shopclues.com/images/thumbnails/67262/320/320/IMAES9GDZV3NPG8M1491081901.jpg",
+      "price1": "Upto 70% Off"
+    },
+    {
+      "id": 24,
+      "title": "Wall Decors",
+      "profile": "https://cdn.shopclues.com/images/thumbnails/84338/320/320/128352190Ganesh1505896312.jpg",
+      "price1": "Min 60% Off"
+    },
+    {
+      "id": 25,
+      "title": "Fashlook Men",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/95098/320/320/142654363-95098986-1653063215.jpg",
+      "price1": "169",
+      "price": 169,
+      "description": "Fashlook Men Brown Leatherite Bi-fold Wallet"
+    },
+    {
+      "id": 26,
+      "title": "Odoky Men ",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/104223/320/320/148695190-104223920-1668507815.jpg",
+      "price1": "399",
+      "price": 399,
+      "description": "Odoky Men Cotton Blend Blue Shrug"
+    },
+    {
+      "id": 27,
+      "title": "Stylogue Men",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/104223/200/200/148695185-104223914-1668508109.jpg",
+      "price1": "379",
+      "price": 379,
+      "description": "Stylogue Men Silver Cotton Lapel Collar Cardigan"
+    },
+    {
+      "id": 28,
+      "title": "Trendyz Men",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/105344/200/200/149172710-105344978-1666996516.jpg",
+      "price1": "499",
+      "price": 499,
+      "description": "Trendyz Men Black Cotton Hooded Sweatshirt"
+    },
+    {
+      "id": 29,
+      "title": "Mediacal Equipment & Accessories",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/108803/280/1/150436700-108803780-1596188707.jpg",
+      "price1": "Upto 60% Off"
+    },
+    {
+      "id": 30,
+      "title": "Fitness Bands & Watches",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/104507/280/1/148819339-104507472-1579085071.jpg",
+      "price1": "Upto 80% Off"
+    },
+    {
+      "id": 31,
+      "title": "Bottles & Shakers",
+      "profile": "https://cdn.shopclues.com/images/thumbnails/27595/280/1/11448611056.jpg",
+      "price1": "Upto 80% Off"
+    },
+    {
+      "id": 32,
+      "title": "Nutrition & Supplements",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/103419/280/1/148130677-103419160-1571212818.jpg",
+      "price1": "Upto 80% Off"
+    },
+    {
+      "id": 33,
+      "title": "Skipping Ropes",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/95250/280/1/142772233-95250978-1544273464.jpg",
+      "price1": "Starting @199"
+    },
+    {
+      "id": 34,
+      "title": "Yoga Mats",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/107160/280/1/149847355-107160132-1590790597.jpg",
+      "price1": "Upto 80% Off"
+    },
+    {
+      "id": 35,
+      "title": "Khadi",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/104122/280/1/148627878-104122294-1577180435.jpg",
+      "price1": "Starting @ 69"
+    },
+    {
+      "id": 36,
+      "title": "Redmi",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/109822/280/1/150760050-109822495-1600850631.jpg",
+      "price1": "Save Upto Rs 5000"
+    },
+    {
+      "id": 37,
+      "title": "Milton",
+      "profile": "https://cdn.shopclues.com/images/thumbnails/34620/280/1/902417708981309282209372miltonwaterbottleset1434449243144186494711454507692145672090914577949341459228900.jpg",
+      "price1": "Upto 60% Off"
+    },
+    {
+      "id": 38,
+      "title": "Realme",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/109013/280/1/150523151-109013699-1603186269.jpg",
+      "price1": "Save Upto Rs.5000"
+    },
+    {
+      "id": 39,
+      "title": "Vivo",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/109124/280/1/150563834-109124498-1600113360.jpg",
+      "price1": "Save Upto Rs.5000"
+    },
+    {
+      "id": 40,
+      "title": "Philips",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/108804/280/1/150437204-108804736-1602946705.jpg",
+      "price1": "Upto 40% Off"
+    },
+    {
+      "id": 41,
+      "title": "American Tourister",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/108327/320/1/150284086-108327730-1594283471.jpg",
+      "price1": "Upto 75% Off"
+    },
+    {
+      "id": 42,
+      "title": "Ivy Vacker UV",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/101449/320/320/146972107-101449020-1664652884.jpg",
+      "price1": "199",
+      "price": 199,
+      "description": "Ivy Vacker UV Protected Unisex Full Rim Aviator Sunglasses 2 Wayfarers Free (Brown, Black & Grey)"
+    },
+    {
+      "id": 43,
+      "title": "Pockester Mobile Box",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/114233/200/200/152310615-114233377-1668507492.jpg",
+      "price1": "159",
+      "price": 159,
+      "description": "Mobile Box Wood Key Holder (5 Hooks, Brown)"
+    },
+    {
+      "id": 44,
+      "title": "Y Green BMW",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/115808/200/200/152878340-115808533-1668506624.jpg",
+      "price1": "199",
+      "price": 199,
+      "description": "Y Green BMW Men Pu Bi-Fold Wallet"
+    },
+    {
+      "id": 45,
+      "title": "Neoprene Half Face",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/45487/320/320/116636483-45487609-1671186820.jpg",
+      "price1": "139",
+      "price": 139,
+      "description": "Neoprene Half Face Black Bike Riding Face Mask (Free Size)"
+    },
+    {
+      "id": 46,
+      "title": "Pause Men White",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/104239/320/320/148699700-104239236-1668507832.jpg",
+      "price1": "379",
+      "price": 379,
+      "description": "Pause Men White High Neck T-Shirt"
+    },
+    {
+      "id": 47,
+      "title": "Singularity Men's ",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/114621/320/320/152497670-114621560-1625832145.jpg",
+      "price1": "349",
+      "price": 349,
+      "description": "Singularity Men's White Casual Regular Fit Short Kurta"
+    },
+    {
+      "title": "Singularity Men's ",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/114621/320/320/152497670-114621560-1625832145.jpg",
+      "price1": "349",
+      "price": 349,
+      "description": "Singularity Men's White Casual Regular Fit Short Kurta",
+      "id": 48
+    },
+    {
+      "title": "Singularity Men's ",
+      "profile": "https://cdn.shopclues.com/images1/thumbnails/114621/320/320/152497670-114621560-1625832145.jpg",
+      "price1": "349",
+      "price": 349,
+      "description": "Singularity Men's White Casual Regular Fit Short Kurta",
+      "id": 49
+    }
+  ],
+  "Mobile&Laptop": [
+    
+
+      {
+    
+        "title": "(Refurbished) Nokia 1616 (Black, Single Sim, 1.8 Inch Display)",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/100740/280/1/146388171-100740822-1674048486.jpg",
+        "brand": "NOKIA",
+        "originalprice": 2299,
+        "discount": 43,
+        "rating": 3.2,
+        "condition": "Refurbished",
+        "category": "Mobile",
+        "createdAt": 1674135369081,
+        "id": "YhrDNltgYu",
+        "price": 1311
+      },
+      {
+    
+        "title": "Refurbished NOKIA 1100 1.4 inches Single Sim Feature Phone Assorted Color",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/97673/320/320/144264990-97673863-1668507231.jpg",
+        "brand": "NOKIA",
+        "originalprice": 4000,
+        "discount": 76,
+        "rating": 4.2,
+        "condition": "Refurbished",
+        "category": "Mobile",
+        "createdAt": 1674135599295,
+        "id": "JHrcy9m1yh",
+        "price": 960
+      },
+      {
+    
+        "title": "Refurbished iPhone 5S (16GB)",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/112439/320/320/151644357-112439509-1668508088.jpg",
+        "brand": "APPLE",
+        "originalprice": 19999,
+        "discount": 64,
+        "rating": 4.7,
+        "condition": "Refurbished",
+        "category": "Mobile",
+        "createdAt": 1674135793432,
+        "id": "BSwgxz0iA2",
+        "price": 7200
+      },
+      {
+    
+        "title": "Samsung Galaxy Tab S3 9.7 32 GB, 4 GB RAM Unboxed",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/112439/320/320/151644357-112439509-1668508088.jpg",
+        "brand": "SAMSUNG",
+        "originalprice": 29000,
+        "discount": 17,
+        "rating": 4.5,
+        "condition": "new",
+        "category": "Tablet",
+        "createdAt": 1674135953673,
+        "id": "EwmRRIfIbR",
+        "price": 24070
+      },
+      {
+    
+        "title": "Refurbished HP 745 G2 AMD A Series A10, 8GB RAM, 320GB HDD, 14 Screen Laptop",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/116251/320/320/153050559-116251648-1668507822.jpg",
+        "brand": "HP",
+        "originalprice": 75499,
+        "discount": 80,
+        "rating": 4.7,
+        "condition": "Refurbished",
+        "category": "Laptop",
+        "createdAt": 1674136086227,
+        "id": "aoKlPW8VhQ",
+        "price": 15100
+      },
+      {
+    
+        "title": "Lenovo L440 Intel i5 4200M 4th Gen Personal Laptop - 14 inches 4GB RAM 500 HDD",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/116317/320/320/153067613-116317106-1655394881.jpg",
+        "brand": "HP",
+        "originalprice": 89999,
+        "discount": 79,
+        "rating": 4.8,
+        "condition": "new",
+        "category": "Laptop",
+        "createdAt": 1674136163237,
+        "id": "3INn7SdHjh",
+        "price": 18900
+      },
+      {
+    
+        "title": "Refurbished Nokia 5233 Single Sim Feature Phone 3.2 inches Display (Assorted colours)",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/115728/320/320/152850160-115728575-1665757099.jpg",
+        "brand": "NOKIA",
+        "originalprice": 1999,
+        "discount": 30,
+        "rating": 3.8,
+        "condition": "Refurbished",
+        "category": "Mobile",
+        "createdAt": 1674136324983,
+        "id": "AP0j65NVRP",
+        "price": 1399
+      },
+      {
+    
+        "title": "Nokia 1100 1.2 inches(3.05 cm) Single Sim Feature Phone (Black)",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/97673/320/320/144264970-97673791-1664551709.jpg",
+        "brand": "NOKIA",
+        "originalprice": 5799,
+        "discount": 83,
+        "rating": 3.2,
+        "condition": "new",
+        "category": "Mobile",
+        "createdAt": 1674136442848,
+        "id": "xFemx5pSNc",
+        "price": 986
+      },
+      {
+    
+        "title": "Refurbished Nokia 1100 Single Sim Feature Phone",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/113494/320/320/152117126-113494019-1616499742.jpg",
+        "brand": "NOKIA",
+        "originalprice": 2499,
+        "discount": 60,
+        "rating": 3.1,
+        "condition": "Refurbished",
+        "category": "Mobile",
+        "createdAt": 1674136591590,
+        "id": "06tHfOWrBu",
+        "price": 1000
+      },
+      {
+    
+        "title": "Refurbished Apple Iphone 4S (16GB)",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/113568/320/320/152145532-113568220-1664649633.jpg",
+        "brand": "APPLE",
+        "originalprice": 9999,
+        "discount": 55,
+        "rating": 4.1,
+        "condition": "Refurbished",
+        "category": "Mobile",
+        "createdAt": 1674136740304,
+        "id": "y5sOw9Lcgh",
+        "price": 4500
+      },
+      {
+    
+        "title": "(Refurbished) Lenovo L440 Intel i5 4200M 4th Gen Personal Laptop - 14 inches 8GB RAM 320 HDD",
+        "image": "https://cdn.shopclues.com/images1/thumbnails/116317/320/320/153067614-116317109-1655139568.jpg",
+        "brand": "LENOVO",
+        "originalprice": 89999,
+        "discount": 78,
+        "rating": 5.8,
+        "condition": "Refurbished",
+        "category": "Laptop",
+        "createdAt": 1674137215523,
+        "id": "COKMeJEFGk",
+        "price": 19800
+      },
+    {
+      
+      "title": "Refurbished Nokia 1600 Single Sim Feature phone 1.4 inches",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/100740/320/320/146388171-100740822-1673120354.jpg",
+      "brand":"NOKIA",
+      "originalprice": 1599,
+      "discount":43,
+      "rating":4.1,
+      "condition":"Refurbished",
+      "category":"Mobile",
+      "createdAt":1674135369091,
+      "id":"06tHfOWrOu",
+      "price": 899
+      
+    },
+    {
+      
+      "title": "Refurbished HP 745 G2 AMD A Series A10, 8GB RAM, 320GB HDD, 14 Screen Laptop",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/116251/280/1/153050559-116251648-1668507822.jpg",
+      "brand": "HP",
+      "originalprice": 29999,
+      "discount":55,
+      "rating":3.8,
+      "condition":"new",
+      "category":"Laptop",
+      "createdAt":1674135793445,
+      "id":"06tHfOtrBu",
+      "price": 14999
+      
+    },
+    {
+      
+      "title": "Refurbished iPhone 5S (16GB)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/112439/320/320/151644357-112439509-1668508088.jpg",
+      "brand":"APPLE",
+      "originalprice": 10000,
+      "discount":17,
+      "rating":4.1,
+      "condition":"Refurbished",
+      "category":"Mobile",
+      "createdAt":16741357934920,
+      "id":"aoKlPW8VhA",
+      "price": 7299
+      
+    },
+    {
+      
+      "title": "Samsung Galaxy Tab S3 9.7 32 GB, 4 GB RAM Unboxed",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/100282/280/1/146108718-100282238-1558345152.jpg",
+      "brand":"SAMSUNG",
+      "originalprice": 49999,
+      "discount":30,
+      "rating":4.2,
+      "condition":"new",
+      "category":"Tablet",
+      "createdAt":1674135599298,
+      "id":"aoKlPW8Vhgg",
+      "price": 24059
+    },
+    {
+      
+      "title": "Refurbished NOKIA 1100 1.4 inches Single Sim Feature Phone Assorted Color",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/97673/280/1/144264990-97673863-1668507231.jpg",
+      "brand":"NOKIA",
+      "originalprice": 1099,
+      "discount":55,
+      "rating":3.8,
+      "condition":"Refurbished",
+      "category":"Mobile",
+      "createdAt":1674135369069,
+      "id":"06tHfOtrHJ",
+      "price": 949
+    },
+    {
+      "title": "AXL Intel Gemini lake, N4020 Dual Core, 14.1 inches Display Notebook (4GB Ram 128GB SSD, DOS)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/115778/320/320/152868135-115778259-1673530685.jpg",
+      "brand": "INTEL",
+      "originalprice": 24999,
+      "discount":30,
+      "rating":4.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690102,
+      "id":"06tHfIIrHJ",
+      "price": 16499
+    },
+    {
+      
+      "title": "Refurbished Apple Iphone 4S (16GB)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/113568/320/320/152145532-113568220-1664649633.jpg",
+      "brand":"APPLE",
+      "originalprice": 5999,
+      "discount":43,
+      "rating":4.2,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690103,
+      "id":"06tHfIYYHJ",
+      "price": 4499
+      
+    },
+    {
+      "title": "Refurbished Nokia 5233 Single Sim Feature Phone 3.2 inches Display (Assorted colours)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/115728/320/320/152850160-115728575-1665757099.jpg",
+      "brand":"NOKIA",
+      "originalprice": 2599,
+      "discount":45,
+      "rating":4.5,
+      "condition":"Refurbished",
+      "category":"Mobile",
+      "createdAt":16741353690104,
+      "id":"06tHfIYYPP",
+      "price": 1399
+    },
+    {
+      "title": "Refurbished NOKIA 105 Single Sim Mobile Phone (Assorted color)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/112499/280/1/151691681-112499420-1668506619.jpg",
+      "brand":"NOKIA",
+      "originalprice": 3699,
+      "discount":78,
+      "rating":4.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690105,
+      "id":"06tHfIIrLJ",
+      "price": 1199
+    },
+    {
+      "title": "Refurbished Nokia 1110I Single Sim Feature Phone (Assorted colours)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/56727/320/320/85444779-56727506-1668506622.jpg",
+      "brand":"NOKIA",
+      "originalprice": 2999,
+      "discount":79,
+      "rating":3.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690106,
+      "id":"06tHfIKrLJ",
+      "price": 929
+      
+    },
+    {
+      
+      "title": "Refurbished Nokia 5310 Single Sim Feature Phone (Assorted Colour)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/104955/320/320/148961802-104955471-1665754686.jpg",
+      "brand":"NOKIA",
+      "originalprice": 4699,
+      "discount":78,
+      "rating":4.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690107,
+      "id":"06tHfIIOKJ",
+      "price": 1649
+    },
+    {
+      
+      "title": "(Refurbished) HP Elitebook 745G2 AMD PRO-7150B Processor 14.1 Inches Ultra Slim 4 gb ram hdd 500 Laptop",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/116317/320/320/153067610-116317101-1655394269.jpg",
+      "brand":"HP",
+      "originalprice": 26999,
+      "discount":28,
+      "rating":2.1,
+      "condition":"Refurbished",
+      "category":"Laptop",
+      "createdAt":16741353690108,
+      "id":"06tHfIIPPJ",
+      "price": 16999
+      
+    },
+    {
+      
+      "title": "Import DELL LATITUDE D630 C2D",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/115708/280/1/152842587-115708020-1635756280.jpg",
+      "brand":"DELL",
+      "originalprice": 20865,
+      "discount":48,
+      "rating":4.9,
+      "condition":"new",
+      "category":"Laptop",
+      "createdAt":16741353690109,
+      "id":"06tOoIIrLJ",
+      "price": 13000
+    },
+    {
+      
+      "title": "Refurbished NOKIA 1100 1.4 inches Single Sim Feature Phone Assorted Color",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/84473/320/320/136843185-84473387-1672732755.jpg",
+      "brand":"NOKIA",
+      "originalprice": 4299,
+      "discount":88,
+      "rating":5.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690110,
+      "id":"06tHfkIrLJ",
+      "price": 1199
+    },
+    {
+      "title": "(Refurbished)Dell Latitude E7240 4th Gen Intel Core i5 12.5 inches Laptop (8GB/512GB SSD/Windows 10/Integrated Graphics, 1.8 kg)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/116323/320/320/153069027-116323448-1653906188.jpg",
+      "brand":"DELL",
+      "originalprice": 24999,
+      "discount":42,
+      "rating":2.1,
+      "condition":"Refurbished",
+      "category":"Laptop",
+      "createdAt":16741353690111,
+      "id":"06tHfIIrjJ",
+      "price": 19999
+    },
+    {
+      "title": "Dell 6440 Intel Core i7 4th Gen, 4GB RAM, 500GB HDD, 14 Screen Laptop",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/115771/320/320/152865841-115771808-1638349516.jpg",
+      "brand":"DELL",
+      "originalprice": 29999,
+      "discount":28,
+      "rating":3.1,
+      "condition":"new",
+      "category":"Laptop",
+      "createdAt":16741353690112,
+      "id":"06PPfIIrLJ",
+      "price": 21499
+    },
+    {
+      "title": "Refurbished Nokia 1200 Mobile Phone Single Sim (Assorted Color)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/116374/320/320/153078934-116374240-1665756517.jpg",
+      "brand":"NOKIA",
+      "originalprice": 1900,
+      "discount":78,
+      "rating":5.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690113,
+      "id":"06tHfIprLJ",
+      "price": 1349
+      
+    },
+    {
+      "title": "(Refurbished) Nokia 1616 (Black, Single Sim, 1.8 Inch Display)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/97281/320/320/143938199-97281063-1673504568.jpg",
+      "brand":"NOKIA",
+      "originalprice": 1999,
+      "discount":68,
+      "rating":2.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690114,
+      "id":"06tHfIIpLJ",
+      "price": 999
+    },
+    {
+      "title": "Nokia 1100 Refurbished Mobile Phone (Assorted Colors)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/113512/320/320/152124237-113512993-1673128173.jpg",
+      "brand":"NOKIA",
+      "originalprice": 1999,
+      "discount":78,
+      "rating":4.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690115,
+      "id":"06tHfIIrLJ",
+      "price": 999
+    },
+    {
+     
+      "title": "Lenovo L440 Intel i5 4200M 4th Gen Personal Laptop - 14 inches/4 GB/320 GB/HD 720p/Windows 10 Pro/HD Graphics 4600/Black/2.26 Kg",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/116317/320/320/153067612-116317103-1655135653.jpg",
+      "brand":"LENOVO",
+      "originalprice": 20999,
+      "discount":22,
+      "rating":3.6,
+      "condition":"new",
+      "category":"Laptop",
+      "createdAt":16741353690116,
+      "id":"06tHfIorLJ",
+      "price": 18499
+    },
+    {
+      
+      "title": "Refurbished Nokia 1110I Single Sim Feature Phone (Assorted colours)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/97581/320/320/144183454-97581716-1665471423.jpg",
+      "brand":"NOKIA",
+      "originalprice": 1099,
+      "discount":59,
+      "rating":6.9,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690117,
+      "id":"06tHfikrLJ",
+      "price": 900
+    },
+    {
+     
+      "title": "Lenovo L440 Intel i5 4200M 4th Gen Personal Laptop - 14 inches 4GB RAM 500 HDD",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/116317/320/320/153067613-116317106-1655394881.jpg",
+      "brand":"LENOVO",
+      "originalprice": 20999,
+      "discount":42,
+      "rating":9.1,
+      "condition":"new",
+      "category":"Laptop",
+      "createdAt":16741353690118,
+      "id":"06twwIIrLJ",
+      "price": 18999
+      
+    },
+    {
+      
+      "title": "Refurbished Nokia 5233 Single Sim Feature Phone 3.2 inches Display (Assorted colours)",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/111747/320/320/151309025-111747668-1665754117.jpg",
+      "brand":"NOKIA",
+      "originalprice": 1999,
+      "discount":18,
+      "rating":3.1,
+      "condition":"new",
+      "category":"Mobile",
+      "createdAt":16741353690119,
+      "id":"06tHpPIrLJ",
+      "price": 1499
+    },
+    {
+      
+      "title": "Lenovo L440 Intel i5 4200M 4th Gen Personal Laptop - 14 inches 8GB RAM 320 HDD",
+      "image": "https://cdn.shopclues.com/images1/thumbnails/116317/320/320/153067614-116317109-1655139568.jpg",
+      "brand":"NOKIA",
+      "originalprice": 20999,
+      "discount":22,
+      "rating":5.2,
+      "condition":"new",
+      "category":"Laptop",
+      "createdAt":16741353690120,
+      "id":"06tHfIIrPLo",
+      "price": 19499
+    }
+  ],
+  "ragister": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "title": "Susheel Kumar",
+      "email": "Susheelkumar@gmail.com",
+      "profile": "https://images.pexels.com/photos/734428/pexels-photo-734428.jpeg?cs=srgb&dl=pexels-reynaldo-brigworkz-brigantty-734428.jpg&fm=jpg",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "title": "Md Afsar",
+      "email": "mdafsaransal@gmail.com",
+      "profile": "https://images.pexels.com/photos/734428/pexels-photo-734428.jpeg?cs=srgb&dl=pexels-reynaldo-brigworkz-brigantty-734428.jpg&fm=jpg",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "title": "Pritam Halder",
+      "email": "pritampritamhalder@gmail.com",
+      "profile": "https://images.pexels.com/photos/734428/pexels-photo-734428.jpeg?cs=srgb&dl=pexels-reynaldo-brigworkz-brigantty-734428.jpg&fm=jpg",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "title": "Tushar Tawale",
+      "email": "tushartawale@example.in",
+      "profile": "https://images.pexels.com/photos/734428/pexels-photo-734428.jpeg?cs=srgb&dl=pexels-reynaldo-brigworkz-brigantty-734428.jpg&fm=jpg",
+      "status": "Active",
+      "role": "Admin"
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "title": "Adarsh Jondhale",
+      "email": "adarshjondhale@example.in",
+      "profile": "https://images.pexels.com/photos/734428/pexels-photo-734428.jpeg?cs=srgb&dl=pexels-reynaldo-brigworkz-brigantty-734428.jpg&fm=jpg",
+      "status": "Active",
+      "role": "Admin"
+    }
+    
+    
+  ]
+}
