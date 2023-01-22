@@ -67,12 +67,13 @@ legalinfo.addEventListener("click", (e) => {
 // }
 // localStorage.setItem("checkout",JSON.stringify(obj));
 let obj= JSON.parse(localStorage.getItem("checkout"))
+
 // let obj = x;
 console.log(obj)
 
 let card = document.getElementById("card-wrapper")
 
-renderpage(obj.id, obj.title, obj.profile, obj.price, obj.description);
+renderpage(obj.id, obj.title, obj.image, obj.price, obj.description);
 let section = document.getElementById("productsection")
 
 function renderpage(id, name, img, price, desc) {
