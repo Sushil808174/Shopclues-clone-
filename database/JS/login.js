@@ -234,7 +234,7 @@ otpBtn.addEventListener('click',()=>{
       flag = false;
       localStorage.setItem('signin',JSON.stringify(el));
       alert('sign in Sucessfull')
-      window.location.href='admin1.html'
+      window.location.href='index.html'
     }
   })
   if(flag===true){
@@ -258,9 +258,9 @@ login.addEventListener("click", () => {
         <input type="text" name="input" id="email" placeholder="Enter Your mobile number or email id">
         </div>
         <div class="inputemail">
-        <input type="text" name="input" id="otp" placeholder="Enter OTP here">
+        <input type="text" name="input" id="otp" placeholder="Enter Your Password here">
         </div>
-        <div class="otpBtn" id="otpBtn">Login via OTP</div>
+        <div class="otpBtn" id="otpBtn">Login</div>
         `;
   appendSection.innerHTML = data;
 });
