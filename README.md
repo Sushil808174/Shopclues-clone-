@@ -7,3 +7,6 @@ npm i
 ```
 npm start
 ```
+## Languages and Tools
+
+Languages - HTML, CSS, JavaScript
