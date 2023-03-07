@@ -7,13 +7,16 @@ npm i
 ```
 npm start
 ```
-## Languages and Tools
-
-Languages - HTML, CSS, JavaScript
-
-##Team Member's Name
-Susheel Kumar
-Pritam Halder
-Adarsh Jondhale
-MD Afsar Ansel
-Tushar Tawale
+## Used Tech Stack
+```
+1. HTML
+2. CSS
+3. JavaScript
+```
+## Team Member's Name
+```
+1. Susheel Kumar
+2. Pritam Halder
+3. Adarsh Jondhale
+4. MD Afsar Ansel
+5. Tushar Tawale
